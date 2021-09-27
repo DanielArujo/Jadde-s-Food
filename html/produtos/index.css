@@ -56,7 +56,8 @@ button{
 .background-informacoes{
     display: flex;
     flex-direction: column;
-    height: 80vh;
+    justify-content: center;
+    height: 85vh;
     padding: 3em;
     background-color: #CBA28C;
 
@@ -75,7 +76,6 @@ button{
     justify-content: space-around;
     padding: 2em;
     min-width: 80%;
-    height: 90%;
     background-color: #F3EAD7;
     border-radius: 10px;
     align-items: center;
