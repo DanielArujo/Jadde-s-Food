@@ -61,48 +61,65 @@ button{
     min-height: 75vh;
 }
 
-.box-inputs{
+.box-funcionalidades{
     display: flex;
-    flex-direction: row;
-
     justify-content: center;
 }
 
-.infoAdm{
+
+
+.box-produtos{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
     padding: 2em;
+    min-width: 80vw;
     min-height: 52vh;
     background-color: #F3EAD7;
-    margin-left: 5em;
     border-radius: 10px;
 }
 
-.infoAdm input{
-    margin-bottom: 1.7em;
-    border:none;
-    border-radius: 10px;
-    padding: 0.5em 1em;
-    width: 15em;
-}
-
-.infoAdm button{
-    text-align: start;
+.box-produtos input{
+    padding: 1.5em 2em;
+    margin-bottom: 2em;
     border-radius: 10px;
     border: none;
-    margin-bottom: 2.3em;
-    padding: 0.5em 1em;
-    width: 15em;
-    background-color: white;
 }
 
-.infoAdm button:hover{
-    background-color: #b9b9b9;
+
+
+.box-produto{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1em;
+    background-color: #FFFFFF;
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    border-bottom:solid #BBAEAE;
+}
+
+.produto-info{
+    margin: 0em 1em;
+}
+
+.box-botoes button{
+    border: none;
+    border-radius: 10px;
+    padding: 0.3em 0.8em;
+}
+
+.alterar button{
+    background-color: #7CCF13;
+    margin-bottom: 0.5em;
+}
+
+.deletar button{
+    background-color: #FF3838;
 }
 
 .Faixa{
     display: flex;
     background-color: #78290F;
-    width: 100vw;
     height: 10vh;    
 }

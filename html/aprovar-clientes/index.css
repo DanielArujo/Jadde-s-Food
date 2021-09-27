@@ -7,6 +7,11 @@ body {
     cursor: default;
 }
 
+button{
+    cursor: pointer;
+}
+
+
 .Box-Site{
     display: flex;
     flex-direction: column;
@@ -41,53 +46,61 @@ body {
     margin: 0em 1em;
 }
 
-.background-login{
+.Informacoes{
+    margin: 0em 0em 1em 5em;
+    color: white;
+    font-size: 28px;
+}
+
+.background-informacoes{
     display: flex;
     flex-direction: column;
 
-    justify-content: center;
+    padding: 3em;
     background-color: #CBA28C;
-}
-
-.Login{
-    display: flex;
-    flex-direction: column;
     min-height: 75vh;
+}
 
-    align-items: center;
-    padding: 1.2em 4em;
-    width: 30em;
+.box-funcionalidades{
+    display: flex;
+    justify-content: center;
+}
+
+
+.box-aprovar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2em;
+    min-width: 70vw;
+    min-height: 52vh;
     background-color: #F3EAD7;
-    align-self: center;
-}
-
-.Titulo{
-    font-family: Asul;
-    margin-bottom: 3em;
-    font-size: 30px;
-}
-
-.Login input{
-    margin-bottom: 1em;
-    border: none;
     border-radius: 10px;
-    padding: 1em 1em;
+}
+
+.aprovar{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1em;
+
+    background-color: white;
+    border-bottom: solid #bebebe;
+    padding: 1em 1.5em;
     width: 20em;
+    border-radius: 10px;
 }
 
-
-
-.Login button{
-    margin-top: 3em;
-    background-color: #8FDB53;
-    border: none;
-    padding: 0.7em 1em;
-    width: 10em;
-    border-radius: 20px;
+.img-cliente{
+    margin-right: 1em;
 }
+
+.text-info{
+    margin-bottom: 0.3em;
+}
+
 
 .Faixa{
-    width: 100vw;
-    height: 10vh;
+    display: flex;
     background-color: #78290F;
+    height: 10vh;    
 }
