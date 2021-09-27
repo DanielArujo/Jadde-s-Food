@@ -56,9 +56,9 @@ button{
     display: flex;
     flex-direction: column;
 
+    height: 80vh;
     padding: 3em;
     background-color: #CBA28C;
-    min-height: 75vh;
 }
 
 .box-funcionalidades{
@@ -73,7 +73,7 @@ button{
     justify-content: space-around;
     padding: 2em;
     min-width: 70vw;
-    min-height: 52vh;
+
     background-color: #F3EAD7;
     border-radius: 10px;
 }
@@ -96,6 +96,20 @@ button{
 
 .text-info{
     margin-bottom: 0.3em;
+}
+
+.notification{
+    justify-content: flex-start;
+
+    color: white;
+    background-color: #DB21BD;
+    border: 3px solid white;
+    border-radius: 50%;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    font-size: .7em;
 }
 
 

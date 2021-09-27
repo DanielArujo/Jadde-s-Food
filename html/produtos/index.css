@@ -15,6 +15,7 @@ button{
 .Box-Site{
     display: flex;
     flex-direction: column;
+    
 }
 
 .Barra{
@@ -55,10 +56,10 @@ button{
 .background-informacoes{
     display: flex;
     flex-direction: column;
-
+    height: 80vh;
     padding: 3em;
     background-color: #CBA28C;
-    min-height: 75vh;
+
 }
 
 .box-funcionalidades{
@@ -73,10 +74,11 @@ button{
     flex-direction: row;
     justify-content: space-around;
     padding: 2em;
-    min-width: 80vw;
-    min-height: 52vh;
+    min-width: 80%;
+    height: 90%;
     background-color: #F3EAD7;
     border-radius: 10px;
+    align-items: center;
 }
 
 .box-produtos input{
@@ -86,13 +88,18 @@ button{
     border: none;
 }
 
-
+.produtos-informations{
+    min-width: 20vw;
+}
 
 .box-produto{
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-around;
     margin-bottom: 1em;
+    width: 100%;
+    height: 15vh;
     background-color: #FFFFFF;
     padding: 0.5em 1em;
     border-radius: 10px;
@@ -101,6 +108,10 @@ button{
 
 .produto-info{
     margin: 0em 1em;
+}
+
+.name{
+    margin-bottom: 0.5em;
 }
 
 .box-botoes button{
