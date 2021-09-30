@@ -44,7 +44,7 @@ a:hover{
 .text-instrucao{
     width: 25em;
     margin-bottom: 3em;
-    font-size: 28px;
+    font-size: 23px;
     font-weight: 700;
     align-items: center;
     text-align: center;
@@ -146,9 +146,6 @@ a:hover{
     background-color: #78290F;
 }
 
-.box-name-rodape{
-    margin-bottom: 1em;
-}
 
 .name-restaurant-rodape{
     font-size: 28px;
