@@ -36,9 +36,18 @@ a:hover{
 }
 
 .titulo{
-    font-size: 35px;
+    font-size: 38px;
     font-weight: 700;
     margin-bottom: 1em;
+}
+
+.text-instrucao{
+    width: 25em;
+    margin-bottom: 3em;
+    font-size: 28px;
+    font-weight: 700;
+    align-items: center;
+    text-align: center;
 }
 
 .Voltar {
@@ -61,7 +70,7 @@ a:hover{
     background-color: #581e0a;
 }
 
-.box-login{
+.box-email{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -87,30 +96,34 @@ a:hover{
     align-items: flex-end;
 }
 
-.input-login{
+.input-email b{
     margin-top: 1.5em;
+    font-size: 25px;
 }
 
 
-.input-login input{
+.input-email input{
     width: 25em;
-    height: 3em;
+    height: 3.5em;
+    padding: 1em;
     border-radius: 10px;
-    border: solid 1px;
+    border: solid 1px gray ;
     outline: none;
     cursor: text;
-    
 }
 
-.info-login{
+.info-email{
     margin-bottom: 0.5em;
     font-size: 20px;
 }
 
+.send{
+    margin-bottom: 5em;
+}
 
-.criar-conta button{
-    width: 11em;
-    padding: 0.7em 0em;
+.send button{
+    width: 13.5em;
+    padding: 0.5em 0em;
     margin: 1em 0em;
     cursor: pointer;
     font-size: 25px;
@@ -118,11 +131,11 @@ a:hover{
     border-radius: 10px;
     border: none;
     color: white;
-    background-color: #A82C2C;
+    background-color: #78290F;
 }
 
-.criar-conta button:hover{
-    background-color: #941e1e;
+.send button:hover{
+    background-color: #5e1b05;
 }
 
 
