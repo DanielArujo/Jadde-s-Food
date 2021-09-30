@@ -10,6 +10,7 @@ body {
 .Box-Site{
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
 }
 
 .Barra{
@@ -52,7 +53,7 @@ body {
 .Login{
     display: flex;
     flex-direction: column;
-    min-height: 75vh;
+    min-height: 85vh;
 
     align-items: center;
     padding: 1.2em 4em;
@@ -87,7 +88,6 @@ body {
 }
 
 .Faixa{
-    width: 100vw;
     height: 10vh;
     background-color: #78290F;
 }
