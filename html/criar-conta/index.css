@@ -24,29 +24,54 @@ a:hover{
 .Container-site{
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .box-principal{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    background-color: #F3EAD7;
+    align-items: center;
+    padding: 2em;
 }
 
-.img-principal{
-    width: 50%;
-    height: auto;
+.titulo{
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+
+.Voltar {
+    align-self: flex-start;
+}   
+
+.Voltar button{
+    width: 6em;
+    padding: 0.8em 0em;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color: #78290F;
+}
+
+.Voltar button:hover{
+    background-color: #581e0a;
 }
 
 .box-login{
     display: flex;
-    flex-direction: column;
-
-    width: 50%;
-    height: auto;
-    padding: 2em 7em 6em 7em;
-    background-color: #F3EAD7;
+    flex-direction: row;
     align-items: center;
+    margin-bottom: 1em;
 }
+
+.box-inputs-esquerda{
+    margin-right: 7em;
+}
+
 
 .box-name{
     display: flex;
@@ -55,18 +80,6 @@ a:hover{
     margin-bottom: 2em;
 }
 
-.name-restaurant{
-    font-size: 28px;
-    font-weight: 700;
-    color: #78290F;
-}
-
-.second-name-restaurant{
-    margin-left: 2em;
-    font-size: 28px;
-    font-weight: 700;
-    color: #78290F;
-}
 
 .box-inputs{
     display: flex;
@@ -95,13 +108,12 @@ a:hover{
 }
 
 
-
 .box-forgot{
     margin: 0.5em 1em 3em 0em;
     color: red;
 }
 
-.box-login button{
+.criar-conta button{
     width: 11em;
     padding: 0.7em 0em;
     margin: 1em 0em;
@@ -114,16 +126,10 @@ a:hover{
     background-color: #A82C2C;
 }
 
-.box-login button:hover{
+.criar-conta button:hover{
     background-color: #941e1e;
 }
 
-.box-creat-account{
-    font-weight: 700;
-    width: 24em;
-    text-align: right;
-
-}
 
 .box-rodape{
     display: flex;
