@@ -1,0 +1,184 @@
+body {
+    margin: 0px;
+}
+
+* {
+    box-sizing: border-box;
+    cursor: default;
+}
+
+button, img{
+    cursor: pointer;
+}
+
+a{
+    color: red;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration-line: underline;
+}
+
+.Container-site{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.box-principal{
+    display: flex;
+    flex-direction: row;
+}
+
+.img-principal{
+    width: 50%;
+    height: auto;
+}
+
+.box-login{
+    display: flex;
+    flex-direction: column;
+
+    width: 50%;
+    height: auto;
+    padding: 2em 7em 6em 7em;
+    background-color: #F3EAD7;
+    align-items: center;
+}
+
+.box-name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.name-restaurant{
+    font-size: 28px;
+    font-weight: 700;
+    color: #78290F;
+}
+
+.second-name-restaurant{
+    margin-left: 2em;
+    font-size: 28px;
+    font-weight: 700;
+    color: #78290F;
+}
+
+.box-inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.input-login{
+    margin-top: 1.5em;
+}
+
+
+.input-login input{
+    width: 25em;
+    height: 3em;
+    border-radius: 10px;
+    border: solid 1px;
+    outline: none;
+    cursor: text;
+    
+}
+
+.info-login{
+    margin-bottom: 0.5em;
+    font-size: 20px;
+}
+
+
+
+.box-forgot{
+    margin: 0.5em 1em 3em 0em;
+    color: red;
+}
+
+.box-login button{
+    width: 11em;
+    padding: 0.7em 0em;
+    margin: 1em 0em;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 700;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color: #A82C2C;
+}
+
+.box-login button:hover{
+    background-color: #941e1e;
+}
+
+.box-creat-account{
+    font-weight: 700;
+    width: 24em;
+    text-align: right;
+
+}
+
+.box-rodape{
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    background-color: #78290F;
+}
+
+.box-name-rodape{
+    margin-bottom: 1em;
+}
+
+.name-restaurant-rodape{
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+}
+
+.second-name-restaurant-rodape{
+    margin-left: 2em;
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+
+}
+
+.box-rodape-informations{
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-evenly;
+}
+
+.text-redes-sociais{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    font-size: 25px;
+    color: white;
+    align-items: center;
+    text-align: center;
+}
+
+.box-redes-sociais{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1em;
+}
+
+.twitter {
+    margin: 0em 1em;
+}
+
+.box-redes-sociais button {
+    border: none;
+    background-color: #78290F;
+}

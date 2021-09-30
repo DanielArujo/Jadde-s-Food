@@ -56,7 +56,8 @@ button{
 .background-informacoes{
     display: flex;
     flex-direction: column;
-    height: 80vh;
+    justify-content: center;
+    height: 85vh;
     padding: 3em;
     background-color: #CBA28C;
 
@@ -75,7 +76,6 @@ button{
     justify-content: space-around;
     padding: 2em;
     min-width: 80%;
-    height: 90%;
     background-color: #F3EAD7;
     border-radius: 10px;
     align-items: center;
@@ -121,13 +121,22 @@ button{
 }
 
 .alterar button{
-    background-color: #7CCF13;
+    background-color: #7ccf0f;
     margin-bottom: 0.5em;
 }
 
 .deletar button{
     background-color: #FF3838;
 }
+
+.alterar button:hover{
+    background-color: #69b309;
+}
+
+.deletar button:hover{
+    background-color: #e42828;
+}
+
 
 .Faixa{
     display: flex;

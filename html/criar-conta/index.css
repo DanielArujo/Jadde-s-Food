@@ -1,0 +1,190 @@
+body {
+    margin: 0px;
+}
+
+* {
+    box-sizing: border-box;
+    cursor: default;
+}
+
+button, img{
+    cursor: pointer;
+}
+
+a{
+    color: red;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration-line: underline;
+}
+
+.Container-site{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.box-principal{
+    display: flex;
+    flex-direction: column;
+    background-color: #F3EAD7;
+    align-items: center;
+    padding: 2em;
+}
+
+.titulo{
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+
+.Voltar {
+    align-self: flex-start;
+}   
+
+.Voltar button{
+    width: 6em;
+    padding: 0.8em 0em;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color: #78290F;
+}
+
+.Voltar button:hover{
+    background-color: #581e0a;
+}
+
+.box-login{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.box-inputs-esquerda{
+    margin-right: 7em;
+}
+
+
+.box-name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+
+.box-inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.input-login{
+    margin-top: 1.5em;
+}
+
+
+.input-login input{
+    width: 25em;
+    height: 3em;
+    border-radius: 10px;
+    border: solid 1px;
+    outline: none;
+    cursor: text;
+    
+}
+
+.info-login{
+    margin-bottom: 0.5em;
+    font-size: 20px;
+}
+
+
+.box-forgot{
+    margin: 0.5em 1em 3em 0em;
+    color: red;
+}
+
+.criar-conta button{
+    width: 11em;
+    padding: 0.7em 0em;
+    margin: 1em 0em;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 700;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color: #A82C2C;
+}
+
+.criar-conta button:hover{
+    background-color: #941e1e;
+}
+
+
+.box-rodape{
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    background-color: #78290F;
+}
+
+.box-name-rodape{
+    margin-bottom: 1em;
+}
+
+.name-restaurant-rodape{
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+}
+
+.second-name-restaurant-rodape{
+    margin-left: 2em;
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+
+}
+
+.box-rodape-informations{
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-evenly;
+}
+
+.text-redes-sociais{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    font-size: 25px;
+    color: white;
+    align-items: center;
+    text-align: center;
+}
+
+.box-redes-sociais{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1em;
+}
+
+.twitter {
+    margin: 0em 1em;
+}
+
+.box-redes-sociais button {
+    border: none;
+    background-color: #78290F;
+}
