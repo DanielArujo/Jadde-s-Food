@@ -1,0 +1,152 @@
+body {
+    margin: 0px;
+}
+
+* {
+    box-sizing: border-box;
+    cursor: default;
+}
+
+button{
+    cursor: pointer;
+}
+
+
+.Box-Site{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.box-cabecalho{
+    display: flex;
+    flex-direction: row;
+    background-color: #78290F;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 1.5em;
+}
+
+
+.name-restaurant{
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+}
+
+.second-name-restaurant{
+    margin-left: 2em;
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+}
+
+.Informacoes{
+    display: flex;
+    flex-direction: row;
+    font-weight: 700;
+    justify-content: space-between;
+    width: 28em;
+    color: white;
+}
+
+.botoes button{
+    padding: 0.5em 1em;
+    color: #78290F;
+    font-weight: 800;
+    background-color: #FFFFFF;
+    border: solid 1px #A89999;
+    border-radius: 10px;
+}
+
+.imagem{
+    display: flex;
+    height: 35em;
+    align-items: center;
+
+}
+
+.imagem img{
+    width: 100%;
+}
+
+.filtrar-categoria button{
+    border: none;
+    border-radius: 10px;
+    background-color: #A5340E;
+    color: white;
+    padding: 0.5em 1em;
+    font-size: 17px;
+    box-shadow: 0px 5px 10px #6b6b6b;
+}
+
+.filtrar-categoria img{
+    margin-right: 1.5em;
+    cursor: pointer;
+}
+
+.filtrar-categoria button:hover{
+    background-color: #802608;
+}
+
+
+
+
+
+.box-rodape{
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    background-color: #78290F;
+}
+
+.box-name-rodape{
+    margin-bottom: 1em;
+}
+
+.name-restaurant-rodape{
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+}
+
+.second-name-restaurant-rodape{
+    margin-left: 2em;
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+
+}
+
+.box-rodape-informations{
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-evenly;
+}
+
+.text-redes-sociais{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    font-size: 25px;
+    color: white;
+    align-items: center;
+    text-align: center;
+}
+
+.box-redes-sociais{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1em;
+}
+
+.twitter {
+    margin: 0em 1em;
+}
+
+.box-redes-sociais button {
+    border: none;
+    background-color: #78290F;
+}
