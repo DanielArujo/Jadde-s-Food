@@ -33,7 +33,7 @@ a:hover{
 }
 
 .img-principal{
-    width: 50%;
+    width: 60%;
     height: auto;
 }
 
@@ -41,7 +41,7 @@ a:hover{
     display: flex;
     flex-direction: column;
 
-    width: 50%;
+    width: 40%;
     height: auto;
     padding: 2em 7em 6em 7em;
     background-color: #F3EAD7;
