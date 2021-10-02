@@ -165,7 +165,7 @@ a:hover{
     align-items: center;
     background-color: white;
     font-weight: 700;
-    border: solid 0.3px gray;
+    border: solid 0.3px #e6ba5c;
 }
 
 .box-rodape{
