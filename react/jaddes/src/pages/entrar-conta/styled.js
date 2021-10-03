@@ -5,6 +5,13 @@ display: flex;
 flex-direction: column;
 height: 100vh;
 
+a{
+    color: red;
+}
+
+a:hover{
+    text-decoration: underline;
+}
 
 .box-principal{
 display: flex;

@@ -11,12 +11,12 @@ export default function Cabecalho(){
                 </div></a>
                 <div class="Informacoes">
                     <div > Delivery</div>
-                    <div > Pedidos</div>
-                    <div > <Linkinicial href="/cardapio"> Cardápio </Linkinicial></div>
+                    <div >  <Linkinicial href="/pedidos" > Pedidos </Linkinicial></div>
+                    <div > <Linkinicial href="/sobremesas"> Cardápio </Linkinicial></div>
                 </div>
-                <div class="botoes"> 
-                    <button>Entrar</button>
-                    <button>Cadastrar-se</button>
+                <div class="botoes-cabecalho"> 
+                <a href="/login"><button>Entrar</button> </a>
+                <a href="/create"><button>Cadastrar-se</button> </a>
                 </div>
             </Container>
     )

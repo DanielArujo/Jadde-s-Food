@@ -10,32 +10,19 @@ const Container = styled.div`
 .box-pedidos{
     display: flex;
     flex-direction: column;
-    background-color: yellow;
+    background-color: #F3EAD7;
     padding: 3em;
+    align-items: center;
 }
 
-.item-pedido{
-    padding: 0.5em 1em;
-    background-color: white;
+.qtd-pedidos{
+    align-self: flex-start;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 1em;
 }
 
-.info-top{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: gray;
-}
 
-.info-bottom{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.botoes button{
-    display: flex;
-    flex-direction: column;
-}
 
 `
 

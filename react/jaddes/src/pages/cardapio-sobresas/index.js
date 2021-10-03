@@ -1,18 +1,17 @@
-
 import Container from "./styled";
 import Cabecalho from "../../components/comum/cabecalho";
 import Rodape from "../../components/comum/rodape";
 import Faixa from "../../components/comum/faixa-produto";
 
-export default function CardapioLanches(){
+export default function CardapioSobremesas(){
     return(
         <Container>
             <Cabecalho />
             <div class="box-principal">
                 
                 <div class="imagem"> 
-                    <div class="categoria"> Lanches </div>
-                    <img src="../assets/images/img-principal-lanches.svg" alt="" /> 
+                    <div class="categoria"> Sobremesas </div>
+                    <img src="../assets/images/img-principal-sobremesa.svg" alt="" /> 
                 </div>
                 
                     <div class="cardapio-inicio">

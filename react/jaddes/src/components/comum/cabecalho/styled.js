@@ -33,7 +33,7 @@ const Container = styled.div`
     color: white;
 }
 
-.botoes button{
+.botoes-cabecalho button{
     padding: 0.5em 1em;
     color: #78290F;
     font-weight: 800;

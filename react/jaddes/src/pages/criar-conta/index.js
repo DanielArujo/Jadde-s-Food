@@ -6,7 +6,7 @@ export default function Create(){
     return(
         <Container>
             <div class="box-principal">
-                <div class="Voltar"> <a href="../entrar-cliente/index.html"> <button>Voltar</button> </a></div>
+                <div class="Voltar"> <a href="/login"> <button>Voltar</button> </a></div>
                 <div class="titulo">Criar Conta</div>
                 <div class="box-login">
                     <div class="box-inputs-esquerda">
