@@ -29,7 +29,7 @@ export default function Jaddes(){
                 </div>
 
                 <div class="Faixa-2">
-                    <div> <img src="" alt="" /> </div>
+                    <div> <img src="../assets/images/second-img-inicial.svg" alt="" /> </div>
                 </div>
             </div>
             <Rodape />
