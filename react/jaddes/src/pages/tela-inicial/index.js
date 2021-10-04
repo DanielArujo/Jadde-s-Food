@@ -1,13 +1,13 @@
 
 import { Container } from "./styled"
-import Cabecalho from "../../components/comum/cabecalho"
+import CabecalhoLogado from "../../components/comum/cabecalho-logado"
 import Rodape from "../../components/comum/rodape"
 
 
 export default function Jaddes(){
     return(
         <Container>
-            <Cabecalho />
+            <CabecalhoLogado />
 
             <div class="box-principal">
                 <div class="Bottom-bar"> 

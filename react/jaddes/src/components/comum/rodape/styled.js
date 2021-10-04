@@ -5,8 +5,8 @@ const Container = styled.div`
     display: flex;
     flex-direction: column;
     padding: 2em;
-    background-color: #78290F;
-
+    background-image: url('../assets/images/img-rodape.svg');
+    background-size: 100%;
 
 .box-name-rodape{
     margin-bottom: 1em;
@@ -56,8 +56,9 @@ const Container = styled.div`
 
 .box-redes-sociais button {
     border: none;
-    background-color: #78290F;
+    background:none;
 }
+
 
 `
 

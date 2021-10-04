@@ -9,6 +9,16 @@ const Container = styled.div`
     justify-content: space-between;
     align-items: center;
     padding: 1em 1.5em;
+
+.left{
+    display: flex;
+    flex-direction: row;
+}
+
+.Titulo{
+    margin-right: 2em;
+}
+
 .name-restaurant{
     font-size: 24px;
     font-weight: 700;
@@ -28,14 +38,19 @@ const Container = styled.div`
     width: 28em;
     color: white;
 }
-.botoes-cabecalho button{
-    padding: 0.5em 1em;
-    color: #78290F;
-    font-weight: 800;
-    background-color: #FFFFFF;
-    border: solid 1px #A89999;
-    border-radius: 10px;
+
+.botoes-cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
+
+.botoes-cabecalho button{
+    background: none;
+    border: none;
+}
+
+
 `
 
 export default Container
