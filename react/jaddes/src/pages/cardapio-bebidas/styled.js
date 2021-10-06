@@ -17,7 +17,7 @@ background-color: #F3EAD7;
 
 .imagem{
 display: flex;
-height: 85vh;
+height: 75vh;
 align-items: center;
 justify-content: center;
 }

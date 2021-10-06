@@ -44,9 +44,11 @@ const Container = styled.div`
 }
 
 .box-pedido-carrinho{
+    align-self: center;
     background-color: white;
     border-radius: 10px;
     padding: 2em 3em;
+    width: 60%;
 }
 
 .info-pedido-top{

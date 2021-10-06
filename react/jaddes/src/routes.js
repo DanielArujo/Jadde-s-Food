@@ -2,6 +2,9 @@
 
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
+
+
+import Home from './pages/home'
 import TelaInicial from './pages/tela-inicial'
 import CardapioLanches from './pages/cardapio-lanches'
 import CardapioSobremesas from './pages/cardapio-sobresas'
@@ -17,7 +20,8 @@ export default function Routes() {
     return (
         <BrowserRouter>
             <Switch>
-                <Route path="/" exact={true} component={TelaInicial} />
+                <Route path="/" exact={true} component={Home} />
+                <Route path="/tela-inicial" exact={true} component={TelaInicial} />
                 <Route path="/lanches" exact={true} component={CardapioLanches} />
                 <Route path="/sobremesas" exact={true} component={CardapioSobremesas} />
                 <Route path="/bebidas" exact={true} component={CardapioBebidas} />
