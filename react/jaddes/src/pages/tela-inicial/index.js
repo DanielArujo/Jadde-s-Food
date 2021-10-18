@@ -2,7 +2,7 @@
 import { Container } from "./styled"
 import CabecalhoLogado from "../../components/comum/cabecalho-logado"
 import Rodape from "../../components/comum/rodape"
-
+import Filtrar from "../../components/comum/botao-filtrar"
 
 export default function Jaddes(){
     return(
@@ -20,7 +20,7 @@ export default function Jaddes(){
                     <img src="../assets/images/img-tela-inicial.svg" alt="" /> 
                 </div>   
                 <div class="Faixa-1">  
-                    <div class="Categoria"> <button> <img src="../assets/images/filtrar-img.svg" alt="" /> Filtrar por categorias </button></div>
+                    <Filtrar />
                     <div class="imagens-f1">
                         <div class="img">  <img src="../assets/images/img-inicial-1.svg" alt="" /></div>
                         <div class="img"> <img src="../assets/images/img-inicial-2.svg" alt="" /> </div>

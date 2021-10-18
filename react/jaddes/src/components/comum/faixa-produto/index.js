@@ -11,6 +11,9 @@ export default function Faixa(){
                 <Produto />
                 <Produto />
                 <Produto />
+                <Produto />
+                <Produto />
+                
             </div>       
         </Container>
     )
