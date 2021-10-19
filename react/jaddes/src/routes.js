@@ -14,7 +14,7 @@ import Login from './pages/entrar-conta'
 import Forgot from './pages/esqueci-senha'
 import Pedidos from './pages/pedidos'
 import Carrinho from './pages/carrinho'
-
+import Aprovar from './pages/aprovar-compra'
 
 export default function Routes() { 
     return (
@@ -30,6 +30,7 @@ export default function Routes() {
                 <Route path="/esqueci" exact={true} component={Forgot} />
                 <Route path="/pedidos" exact={true} component={Pedidos} />
                 <Route path="/carrinho" exact={true} component={Carrinho} />
+                <Route path="/aprovar" exact={true} component={Aprovar} />
             </Switch>
         </BrowserRouter> 
     )
