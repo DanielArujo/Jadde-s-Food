@@ -12,7 +12,7 @@ export default function Jaddes(){
 
             <div class="box-principal">
                 <div class="Bottom-bar"> 
-                    <button> Mais Vendidos </button>
+                    <a href="#vendido"><button> Mais Vendidos </button></a>
                     <button> Ofertas </button>
                 </div>
                 
@@ -31,7 +31,7 @@ export default function Jaddes(){
 
                 <div class="Faixa-2">
                     <div> <img src="../assets/images/img-f2.svg" alt="" /> </div>
-                    <h1> Mais Vendidos:</h1>
+                    <h1 id="vendido"> Mais Vendidos:</h1>
 
                     <FaixaProdutoPop />
                     <FaixaProdutoPop />

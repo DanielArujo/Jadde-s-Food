@@ -8,20 +8,22 @@ const Container = styled.div`
     justify-content: center;
     min-height: 100vh;
     background-color: #F3EAD7;
-
+    
 
 .link{
     margin-bottom: 1em;
+
 }
 
-.Container button{
+button{
     border: none;
     border-radius: 10px;
     padding: 1em 2em;
     background-color: #A82C2C;
+    color: white;
 }
 
-.Container button:hover{
+button:hover{
     background-color: #941e1e;
 }
 

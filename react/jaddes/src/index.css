@@ -21,3 +21,7 @@ a{
 input{
   padding: 0em 1.3em;
 }
+
+html{
+  scroll-behavior: smooth;
+}
