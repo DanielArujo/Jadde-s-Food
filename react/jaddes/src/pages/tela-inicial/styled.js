@@ -7,6 +7,14 @@ const Container = styled.div`
     min-height: 100vh;
 
 
+h1{
+    color: white;
+    text-align: center;
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: black;
+    font-size: 3em;
+}
+
 .box-principal{
     background-color: #F3EAD7;
 }
@@ -90,11 +98,6 @@ const Container = styled.div`
     padding: 1em;
     justify-content: space-around;
     margin: 1em;
-}
-
-.Faixa-2 img{
-    width: 100%;
-    height: 100%;
 }
 
 
