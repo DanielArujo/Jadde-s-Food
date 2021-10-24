@@ -14,7 +14,6 @@ import Login from './pages/entrar-conta'
 import Forgot from './pages/esqueci-senha'
 import Pedidos from './pages/pedidos'
 import Carrinho from './pages/carrinho'
-import Pedidos from './pages/pedidos'
 import Aprovar from './pages/aprovar-compra'
 
 
