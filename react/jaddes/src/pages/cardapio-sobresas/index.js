@@ -2,6 +2,8 @@ import Container from "./styled";
 import Cabecalho from "../../components/comum/cabecalho";
 import Rodape from "../../components/comum/rodape";
 import Faixa from "../../components/comum/faixa-produto";
+import Filtrar from "../../components/comum/botao-filtrar";
+
 
 export default function CardapioSobremesas(){
     return(
@@ -16,9 +18,8 @@ export default function CardapioSobremesas(){
                 
                     <div class="cardapio-inicio">
                         <div class="Cardapio-title"> Cardapio:</div>
-                        <div class="filtrar-categoria"> 
-                            <button><img src="../assets/images/filtrar-img.svg" alt="" /> Filtrar por categorias </button>
-                        </div>
+                        <Filtrar />
+                        
                     </div>
                     <div class="Faixa-cardapio">
                         <Faixa />

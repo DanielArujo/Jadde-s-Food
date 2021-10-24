@@ -1,0 +1,126 @@
+import styled from "styled-components";
+
+
+const Container = styled.div`
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+
+.Barra{
+    display: flex;
+    flex-direction: row;
+    padding: 0.5em 1em;
+    justify-content: space-between;
+    font-family: Alatsi;
+
+    align-items: center;
+    color: white;
+    background-color: #78290F;
+    font-size: 30px;
+}
+
+.Barra img{
+    height: 50px;
+    width: 50px;
+    
+}
+
+.box-text-cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.img-adm{
+    margin: 0em 1em;
+}
+
+.Informacoes{
+    margin: 0em 0em 1em 5em;
+    color: white;
+    font-size: 28px;
+}
+
+.background-informacoes{
+    display: flex;
+    flex-direction: column;
+
+    height: 80vh;
+    padding: 3em;
+    background-color: #CBA28C;
+}
+
+.box-funcionalidades{
+    display: flex;
+    justify-content: center;
+}
+
+
+.box-aprovar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2em;
+    min-width: 70vw;
+    position: relative;
+    background-color: #F3EAD7;
+    border-radius: 10px;
+}
+
+.aprovar{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1em;
+
+    background-color: white;
+    border-bottom: solid #bebebe;
+    padding: 1em 1.5em;
+    width: 20em;
+    border-radius: 10px;
+}
+
+.img-cliente{
+    margin-right: 1em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-radius: 45%;
+    border: none;
+}
+
+.text-info{
+    margin-bottom: 0.3em;
+}
+
+.aprovar-esquerda button{
+    justify-content: flex-start;
+    border:  solid gray;
+    background-color: white;
+    position: absolute;
+    
+    width: 30px;
+    height: 30px;
+}
+
+.aprovar-direita button{
+
+    justify-content: flex-start;
+    border:  solid gray;
+    background-color: white;
+    position: absolute;
+    
+    width: 30px;
+    height: 30px;
+}
+
+.Faixa{
+    display: flex;
+    background-color: #78290F;
+    height: 15vh;    
+}
+
+
+`
+
+export default Container

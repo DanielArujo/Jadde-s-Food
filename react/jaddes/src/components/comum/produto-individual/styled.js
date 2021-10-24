@@ -13,6 +13,16 @@ background-color: white;
 font-weight: 700;
 border: solid 0.3px #e6ba5c;
 }
+
+.preco{
+    padding: 1em;
+}
+
+.comida img{
+    height: 10em;
+    width: 15em
+}
+
 `
 
 export default Container

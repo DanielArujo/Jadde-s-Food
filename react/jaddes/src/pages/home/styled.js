@@ -8,10 +8,11 @@ const Container = styled.div`
     justify-content: center;
     min-height: 100vh;
     background-color: #F3EAD7;
-
+    
 
 .link{
     margin-bottom: 1em;
+
 }
 
 button{
@@ -19,6 +20,7 @@ button{
     border-radius: 10px;
     padding: 1em 2em;
     background-color: #A82C2C;
+    color: white;
 }
 
 button:hover{

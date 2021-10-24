@@ -15,6 +15,8 @@ import Forgot from './pages/esqueci-senha'
 import Pedidos from './pages/pedidos'
 import Carrinho from './pages/carrinho'
 import Pedidos from './pages/pedidos'
+import Aprovar from './pages/aprovar-compra'
+
 
 export default function Routes() { 
     return (
@@ -31,6 +33,7 @@ export default function Routes() {
                 <Route path="/pedidos" exact={true} component={Pedidos} />
                 <Route path="/carrinho" exact={true} component={Carrinho} />
                 <Route path="/pedidos" exact={true} component={Pedidos} />
+                <Route path="/aprovar" exact={true} component={Aprovar} />
             </Switch>
         </BrowserRouter> 
     )

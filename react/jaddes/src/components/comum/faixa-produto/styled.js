@@ -2,11 +2,12 @@ import styled from "styled-components";
 
 const Container = styled.div`
 width: 100%;
-margin-bottom: 5em;
+margin-bottom: 1em;
 
 
 .Nome{
-margin-left: 3em;
+text-align: center;
+margin-bottom: 2em;
 font-size: 25px;
 font-weight: 700;
 }
@@ -18,6 +19,7 @@ justify-content: space-around;
 background-color: #e5cd99;
 padding: 1em 0em;
 }
+
 `
 
 

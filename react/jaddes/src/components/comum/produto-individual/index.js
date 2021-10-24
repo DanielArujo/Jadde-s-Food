@@ -6,7 +6,7 @@ export default function Produto(){
         <Container>
             <div class="imagens">
                 <div class="comida"> <img src="../assets/images/burgao.svg" alt="" /> </div>
-                <div class="nome"> Nome </div>
+                
                 <div class="preco"> Preço </div>
             </div>         
         </Container>

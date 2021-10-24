@@ -2,6 +2,7 @@
 import { Container } from "./styled"
 import CabecalhoLogado from "../../components/comum/cabecalho-logado"
 import Rodape from "../../components/comum/rodape"
+import Filtrar from "../../components/comum/botao-filtrar"
 import FaixaProdutoPop from "../../components/comum/faixa-produto-pop"
 
 export default function Jaddes(){
@@ -11,7 +12,7 @@ export default function Jaddes(){
 
             <div class="box-principal">
                 <div class="Bottom-bar"> 
-                    <button> Mais Vendidos </button>
+                    <a href="#vendido"><button> Mais Vendidos </button></a>
                     <button> Ofertas </button>
                 </div>
                 
@@ -20,7 +21,7 @@ export default function Jaddes(){
                     <img src="../assets/images/img-tela-inicial.svg" alt="" /> 
                 </div>   
                 <div class="Faixa-1">  
-                    <div class="Categoria"> <button> <img src="../assets/images/filtrar-img.svg" alt="" /> Filtrar por categorias </button></div>
+                    <Filtrar />
                     <div class="imagens-f1">
                         <div class="img">  <img src="../assets/images/init-burger.jpg" alt="" /></div>
                         <div class="img"> <img src="../assets/images/init-pizza.jpg" alt="" /> </div>
@@ -30,7 +31,7 @@ export default function Jaddes(){
 
                 <div class="Faixa-2">
                     <div> <img src="../assets/images/img-f2.svg" alt="" /> </div>
-                    <h1> Mais Vendidos:</h1>
+                    <h1 id="vendido"> Mais Vendidos:</h1>
 
                     <FaixaProdutoPop />
                     <FaixaProdutoPop />

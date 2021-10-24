@@ -17,3 +17,11 @@ img, button, a{
 a{
   text-decoration: none;
 }
+
+input{
+  padding: 0em 1.3em;
+}
+
+html{
+  scroll-behavior: smooth;
+}
