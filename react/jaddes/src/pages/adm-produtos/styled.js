@@ -1,0 +1,140 @@
+import styled from "styled-components";
+
+
+const Container = styled.div`
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+
+.Barra{
+    display: flex;
+    flex-direction: row;
+    padding: 0.5em 1em;
+    justify-content: space-between;
+    font-family: Alatsi;
+
+    align-items: center;
+    color: white;
+    background-color: #78290F;
+    font-size: 30px;
+}
+
+.Barra img{
+    height: 50px;
+    width: 50px;
+    
+}
+
+.box-text-cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.img-adm{
+    margin: 0em 1em;
+}
+
+.Informacoes{
+    margin: 0em 0em 1em 5em;
+    color: white;
+    font-size: 28px;
+}
+
+.background-informacoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 85vh;
+    padding: 3em;
+    background-color: #CBA28C;
+
+}
+
+.box-funcionalidades{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.box-produtos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2em;
+    min-width: 80%;
+    background-color: #F3EAD7;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.box-produtos input{
+    padding: 1.5em 2em;
+    margin-bottom: 2em;
+    border-radius: 10px;
+    border: none;
+}
+
+.produtos-informations{
+    min-width: 20vw;
+}
+
+.box-produto{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 1em;
+    width: 100%;
+    height: 15vh;
+    background-color: #FFFFFF;
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    border-bottom:solid #BBAEAE;
+}
+
+.produto-info{
+    margin: 0em 1em;
+}
+
+.name{
+    margin-bottom: 0.5em;
+}
+
+.box-botoes button{
+    border: none;
+    border-radius: 10px;
+    padding: 0.3em 0.8em;
+}
+
+.alterar button{
+    background-color: #7ccf0f;
+    margin-bottom: 0.5em;
+}
+
+.deletar button{
+    background-color: #FF3838;
+}
+
+.alterar button:hover{
+    background-color: #69b309;
+}
+
+.deletar button:hover{
+    background-color: #e42828;
+}
+
+
+.Faixa{
+    display: flex;
+    background-color: #78290F;
+    height: 10vh;    
+}
+
+
+
+`
+
+export default Container

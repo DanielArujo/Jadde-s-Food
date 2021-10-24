@@ -4,12 +4,48 @@ import Rodape from "../../components/comum/rodape";
 import Container from "./styled";
 
 export default function Carrinho(){
+
+    const [pedidos, setPedidos] = useState([])
+    useEffect(mostrar, []);
+
+    function mostrar(){
+        const r = [
+            {
+              id: 1,
+              nome: "refri",
+              preco: "R$ 5,00",
+              descricao: "Esse produto é muito legal e você deve comprá-lo porque sua vida será feliz!!!",
+              especificacoes: "Esse produto é de ótima qualidade você não vai se arrepender jamais na sua vidinha!!"
+            },
+            {
+              id: 2,
+              nome: "Batatana",
+              preco: "R$ 5,00",
+              descricao: "Esse produto é muito legal e você deve comprá-lo porque sua vida será feliz!!!",
+              especificacoes: "Esse produto é de ótima qualidade você não vai se arrepender jamais na sua vidinha!!"
+            },
+            {
+              id: 3,
+              nome: "Hamburguer",
+              preco: "R$ 10,00",
+              descricao: "Esse produto é muito legal e você deve comprá-lo porque sua vida será feliz!!!",
+              especificacoes: "Esse produto é de ótima qualidade você não vai se arrepender jamais na sua vidinha!!" 
+            }
+          ]
+
+          setPedidos(r)
+    }
+
+
+
+
+
     return(
         <Container>
             <Cabecalho />
             <div className="box-carrinho"> 
                 <div className="box-inicio"> 
-                    <div className="titulo-carrinho">Carrinho: </div>
+                    <div className="nome-carrinho">Carrinho: </div>
                     <div className="voltar-carrinho"> <button>Voltar </button> </div>
                 </div>
                 <div className="box-pedido-carrinho"> 

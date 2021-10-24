@@ -14,14 +14,14 @@ const Container = styled.div`
     margin-bottom: 1em;
 }
 
-.Container button{
+button{
     border: none;
     border-radius: 10px;
     padding: 1em 2em;
     background-color: #A82C2C;
 }
 
-.Container button:hover{
+button:hover{
     background-color: #941e1e;
 }
 
