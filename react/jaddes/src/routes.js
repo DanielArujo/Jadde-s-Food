@@ -33,6 +33,7 @@ export default function Routes() {
                 <Route path="/carrinho" exact={true} component={Carrinho} />
                 <Route path="/pedidos" exact={true} component={Pedidos} />
                 <Route path="/aprovar" exact={true} component={Aprovar} />
+                <Route path="/carrinho" exact={true} component={Carrinho} />
             </Switch>
         </BrowserRouter> 
     )
