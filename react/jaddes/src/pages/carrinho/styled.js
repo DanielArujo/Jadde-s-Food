@@ -10,6 +10,7 @@ const Container = styled.div`
     flex-direction: column;
     background-color: #F3EAD7;
     padding: 3em;
+    
 }
 
 

@@ -4,10 +4,20 @@ import Rodape from "../../components/comum/rodape";
 import Container from "./styled";
 import { useState, useEffect } from 'react';
 import CarrinhoItem from "../../components/comum/carrinho-item";
+import { Link } from "react-router-dom";
+import Sucesso from "../../components/pedido-feito";
+
+
+
 
 export default function Carrinho(){
 
+
+
     const [pedidos, setPedidos] = useState([])
+    const [mostrarConfirmado, setMostrarConfirmado] = useState(false); 
+    
+    
     useEffect(mostrar, []);
 
     function mostrar(){
@@ -71,10 +81,12 @@ export default function Carrinho(){
                     </div>
                     <div className="finalization">
                         <button className="add"> Adicionar no Carrinho </button>
-                        <button className="confirm"> Confirmar Pedido </button>
+                        <button className="confirm" onClick={() => setMostrarConfirmado(true)} > Confirmar Pedido </button>
+                        
                     </div>
                 </div>
             </div>
+            <Sucesso confirmado={mostrarConfirmado} />;
             <Rodape />
         </Container>
     )
