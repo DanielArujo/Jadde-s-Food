@@ -16,22 +16,23 @@ background-color: #F3EAD7;
 
 
 .imagem{
-display: flex;
-height: 50vh;
-align-items: center;
-justify-content: center;
+    display: flex;
+    height: 50vh;
+    
+    background-image: url('../assets/images/img-principal-sobremesa.svg');
+    background-size: 100%;
+    background-position-y: 100%;
+
+    align-items: center;
+    justify-content: center;
 }
 
 .categoria{
 font-size: 5em;
 font-weight: 800;
 color: white;
-position: absolute;
 }
 
-.imagem img{
-width: 100%;
-}
 
 
 .cardapio-inicio{
@@ -40,35 +41,6 @@ flex-direction: column;
 }
 
 
-
-.filtrar-categoria{
-display: flex;
-justify-content: flex-end;
-padding: 0em 3em;
-}
-
-
-
-.filtrar-categoria button{
-border: none;
-border-radius: 10px;
-background-color: #A5340E;
-color: white;
-height: 8vh;
-padding: 0.5em 1em;
-font-size: 17px;
-font-weight: 700;
-box-shadow: 0px 5px 10px #6b6b6b;
-}
-
-.filtrar-categoria img{
-margin-right: 1.5em;
-cursor: pointer;
-}
-
-.filtrar-categoria button:hover{
-background-color: #802608;
-}
 
 .Faixa-cardapio{
 display: flex;

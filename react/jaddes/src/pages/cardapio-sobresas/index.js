@@ -13,7 +13,6 @@ export default function CardapioSobremesas(){
                 
                 <div class="imagem"> 
                     <div class="categoria"> Sobremesas </div>
-                    <img src="../assets/images/img-principal-sobremesa.svg" alt="" /> 
                 </div>
                 
                     <div class="cardapio-inicio">

@@ -14,7 +14,6 @@ export default function CardapioLanches(){
                 
                 <div class="imagem"> 
                     <div class="categoria"> Lanches </div>
-                    <img src="../assets/images/img-principal-lanches.svg" alt="" /> 
                 </div>
                 
                     <div class="cardapio-inicio">

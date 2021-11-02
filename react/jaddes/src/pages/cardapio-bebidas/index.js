@@ -13,7 +13,6 @@ export default function CardapioBebidas(){
                 
                 <div class="imagem"> 
                     <div class="categoria"> Bebidas </div>
-                    <img src="../assets/images/img-principal-bebidas.svg" alt="" /> 
                 </div>
                 
                     <div class="cardapio-inicio">
