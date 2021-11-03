@@ -1,131 +1,54 @@
 import Container from "./styled";
+import Management from "../../components/comum/adm/produtoManagement";
+import Api from "../../service/api";
+import { useEffect, useState } from "react";
+
+const api = new Api();
 
 
 export default function Produtos(){
+
+    const [produto, setProduto] = useState([]);
+
+    async function mostrar(){
+        let r = await api.show();
+        console.log(r.data);
+        setProduto(r.data);
+    }
+
+    async function deletar(id){
+        let r = await api.delete(id);
+        alert('apagou ein')
+        mostrar();
+    }
+
+   useEffect( () => {mostrar()}, [] )
+
+
     return(
         <Container>
-            <div class="Barra">
-            <div class="box-text-cabecalho"> 
-                <div class="NomeAdm">Perfil Administrador</div>
-                <div class="img-adm"> <img src="https://image.flaticon.com/icons/png/512/306/306222.png" alt="" /></div>
-                <div class="texto"> Seja bem vindo volta</div>
+            <div className="Barra">
+            <div className="box-text-cabecalho"> 
+                <div className="NomeAdm">Perfil Administrador</div>
+                <div className="img-adm"> <img src="https://image.flaticon.com/icons/png/512/306/306222.png" alt="" /></div>
+                <div className="texto"> Seja bem vindo volta</div>
             </div>
-            <div class="img-sair"> <img src="https://image.flaticon.com/icons/png/512/277/277575.png" alt="" /></div>
+            <div className="img-sair"> <img src="https://image.flaticon.com/icons/png/512/277/277575.png" alt="" /></div>
         </div>
         
-        <div class="background-informacoes">
-            <div class="Informacoes"> Produtos </div>
-            <div class="box-funcionalidades"> 
-                <div class="box-produtos">
-                    <div class="produtos-informations">
-                        <div class="box-produto">
-                            <div class="img"> <img src="../assets/images/img-produto.svg" alt="" /> </div>
-                            <div class="produto-info">
-                                <div class="">Nome:</div>
-                                <div>Código:</div>
-                            </div>
-                            <div class="box-botoes">
-                                <div class="alterar"> <button> Alterar</button></div>
-                                <div class="deletar"> <button> Deletar</button></div>
-                            </div>
-                        </div>
-                        <div class="box-produto">
-                            <div class="img"> <img src="../assets/images/img-produto.svg" alt="" /> </div>
-                            <div class="produto-info">
-                                <div class="">Nome:</div>
-                                <div>Código:</div>
-                            </div>
-                            <div class="box-botoes">
-                                <div class="alterar"> <button> Alterar</button></div>
-                                <div class="deletar"> <button> Deletar</button></div>
-                            </div>
-                        </div>
-                        <div class="box-produto">
-                            <div class="img"> <img src="../assets/images/img-produto.svg" alt="" /> </div>
-                            <div class="produto-info">
-                                <div class="">Nome:</div>
-                                <div>Código:</div>
-                            </div>
-                            <div class="box-botoes">
-                                <div class="alterar"> <button> Alterar</button></div>
-                                <div class="deletar"> <button> Deletar</button></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="produtos-informations">
-                        <div class="box-produto">
-                            <div class="img"> <img src="../assets/images/img-produto.svg" alt="" /> </div>
-                            <div class="produto-info">
-                                <div class="">Nome:</div>
-                                <div>Código:</div>
-                            </div>
-                            <div class="box-botoes">
-                                <div class="alterar"> <button> Alterar</button></div>
-                                <div class="deletar"> <button> Deletar</button></div>
-                            </div>
-                        </div>
-                        <div class="box-produto">
-                            <div class="img"> <img src="../assets/images/img-produto.svg" alt="" /> </div>
-                            <div class="produto-info">
-                                <div class="">Nome:</div>
-                                <div>Código:</div>
-                            </div>
-                            <div class="box-botoes">
-                                <div class="alterar"> <button> Alterar</button></div>
-                                <div class="deletar"> <button> Deletar</button></div>
-                            </div>
-                        </div>
-                        <div class="box-produto">
-                            <div class="img"> <img src="../assets/images/img-produto.svg" alt="" /> </div>
-                            <div class="produto-info">
-                                <div class="">Nome:</div>
-                                <div>Código:</div>
-                            </div>
-                            <div class="box-botoes">
-                                <div class="alterar"> <button> Alterar</button></div>
-                                <div class="deletar"> <button> Deletar</button></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="produtos-informations">
-                        <div class="box-produto">
-                            <div class="img"> <img src="../assets/images/img-produto.svg" alt="" /> </div>
-                            <div class="produto-info">
-                                <div class="">Nome:</div>
-                                <div>Código:</div>
-                            </div>
-                            <div class="box-botoes">
-                                <div class="alterar"> <button> Alterar</button></div>
-                                <div class="deletar"> <button> Deletar</button></div>
-                            </div>
-                        </div>
-                        <div class="box-produto">
-                            <div class="img"> <img src="../assets/images/img-produto.svg" alt="" /> </div>
-                            <div class="produto-info">
-                                <div class="name"> Nome:</div>
-                                <div>Código:</div>
-                            </div>
-                            <div class="box-botoes">
-                                <div class="alterar"> <button> Alterar</button></div>
-                                <div class="deletar"> <button> Deletar</button></div>
-                            </div>
-                        </div>
-                        <div class="box-produto">
-                            <div class="img"> <img src="../assets/images/img-produto.svg" alt="" /> </div>
-                            <div class="produto-info">
-                                <div class="">Nome:</div>
-                                <div>Código:</div>
-                            </div>
-                            <div class="box-botoes">
-                                <div class="alterar"> <button> Alterar</button></div>
-                                <div class="deletar"> <button> Deletar</button></div>
-                            </div>
-                        </div>
-                    </div>  
+        <div className="background-informacoes">
+            <div className="Informacoes"> Produtos </div>
+            <div className="box-funcionalidades"> 
+                <div className="box-produtos">
+                        {produto.map(item => 
+                            <Management key={item.id_produto}
+                                        info={item}  
+                                        onDelete={deletar}/>
+                            )} 
                 </div>  
             </div>
         </div>
-        <div class="Faixa"></div>
+        <div className="Faixa"></div>
         </Container>
     )
 }

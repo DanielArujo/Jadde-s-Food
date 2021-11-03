@@ -10,26 +10,26 @@ export default function Jaddes(){
         <Container>
             <CabecalhoLogado />
 
-            <div class="box-principal">
-                <div class="Bottom-bar"> 
+            <div className="box-principal">
+                <div className="Bottom-bar"> 
                     <a href="#vendido"><button> Mais Vendidos </button></a>
                     <button> Ofertas </button>
                 </div>
                 
-                <div class="img-inicial">
-                    <div class="texto-inicial"> Nós do Jadde's Food oferecemos o melhor ao nossos clientes, desde o conforto dos nossos restaurantes, até a melhor comida de São Paulo! Não passe vontade, se direcione a unidade mais próxima de você e aproveite!</div>
+                <div className="img-inicial">
+                    <div className="texto-inicial"> Nós do Jadde's Food oferecemos o melhor ao nossos clientes, desde o conforto dos nossos restaurantes, até a melhor comida de São Paulo! Não passe vontade, se direcione a unidade mais próxima de você e aproveite!</div>
                     <img src="../assets/images/img-tela-inicial.svg" alt="" /> 
                 </div>   
-                <div class="Faixa-1">  
+                <div className="Faixa-1">  
                     <Filtrar />
-                    <div class="imagens-f1">
-                        <div class="img">  <img src="../assets/images/init-burger.jpg" alt="" /></div>
-                        <div class="img"> <img src="../assets/images/init-pizza.jpg" alt="" /> </div>
-                        <div class="img"> <img src="../assets/images/init-batata.jpg" alt="" /> </div>
+                    <div className="imagens-f1">
+                        <div className="img">  <img src="../assets/images/init-burger.jpg" alt="" /></div>
+                        <div className="img"> <img src="../assets/images/init-pizza.jpg" alt="" /> </div>
+                        <div className="img"> <img src="../assets/images/init-batata.jpg" alt="" /> </div>
                     </div>
                 </div>
 
-                <div class="Faixa-2">
+                <div className="Faixa-2">
                     <div> <img src="../assets/images/img-f2.svg" alt="" /> </div>
                     <h1 id="vendido"> Mais Vendidos:</h1>
 

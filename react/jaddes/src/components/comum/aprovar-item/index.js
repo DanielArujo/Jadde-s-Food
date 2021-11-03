@@ -5,16 +5,16 @@ export default function AprovarItem(){
     return(
         <Container>
             <button> X </button>
-            <div class="aprovar">
-                <div class="img-cliente">
+            <div className="aprovar">
+                <div className="img-cliente">
                     <img src="../assets/images/img-cliente.svg" alt="" />
                     
                 </div>
-                <div class="aprovar-info">
-                    <div class="text-info">Nome:</div>
-                    <div class="text-info">Itens:</div>
-                    <div class="text-info">Valor:</div>
-                    <div class="text-info">Endereço:</div>
+                <div className="aprovar-info">
+                    <div className="text-info">Nome:</div>
+                    <div className="text-info">Itens:</div>
+                    <div className="text-info">Valor:</div>
+                    <div className="text-info">Endereço:</div>
                 </div>
             </div>
         </Container>

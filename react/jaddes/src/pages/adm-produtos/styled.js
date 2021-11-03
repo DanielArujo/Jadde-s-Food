@@ -61,70 +61,33 @@ const Container = styled.div`
 
 .box-produtos{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: row;    
+    flex-wrap: wrap;
+
     padding: 2em;
-    min-width: 80%;
+    height: 70vh;
+    width: 90vw;
+
     background-color: #F3EAD7;
     border-radius: 10px;
     align-items: center;
+    overflow-y: auto;
 }
 
-.box-produtos input{
-    padding: 1.5em 2em;
-    margin-bottom: 2em;
-    border-radius: 10px;
-    border: none;
-}
+.box-produtos::-webkit-scrollbar-track{
+        border-radius: 10px;
+        background-color: gray;
+    }
+.box-produtos::-webkit-scrollbar{
+        width: 7px;
+        background-color: gray;
+        border-radius: 10px;
+    }
+.box-produtos::-webkit-scrollbar-thumb{
+        border-radius: 10px;
+        background-color: #78290F;
+    }
 
-.produtos-informations{
-    min-width: 20vw;
-}
-
-.box-produto{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    margin-bottom: 1em;
-    width: 100%;
-    height: 15vh;
-    background-color: #FFFFFF;
-    padding: 0.5em 1em;
-    border-radius: 10px;
-    border-bottom:solid #BBAEAE;
-}
-
-.produto-info{
-    margin: 0em 1em;
-}
-
-.name{
-    margin-bottom: 0.5em;
-}
-
-.box-botoes button{
-    border: none;
-    border-radius: 10px;
-    padding: 0.3em 0.8em;
-}
-
-.alterar button{
-    background-color: #7ccf0f;
-    margin-bottom: 0.5em;
-}
-
-.deletar button{
-    background-color: #FF3838;
-}
-
-.alterar button:hover{
-    background-color: #69b309;
-}
-
-.deletar button:hover{
-    background-color: #e42828;
-}
 
 
 .Faixa{

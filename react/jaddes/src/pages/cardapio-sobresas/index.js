@@ -9,18 +9,18 @@ export default function CardapioSobremesas(){
     return(
         <Container>
             <Cabecalho />
-            <div class="box-principal">
+            <div className="box-principal">
                 
-                <div class="imagem"> 
-                    <div class="categoria"> Sobremesas </div>
+                <div className="imagem"> 
+                    <div className="categoria"> Sobremesas </div>
                 </div>
                 
-                    <div class="cardapio-inicio">
-                        <div class="Cardapio-title"> Cardapio:</div>
+                    <div className="cardapio-inicio">
+                        <div className="Cardapio-title"> Cardapio:</div>
                         <Filtrar />
                         
                     </div>
-                    <div class="Faixa-cardapio">
+                    <div className="Faixa-cardapio">
                         <Faixa />
                         <Faixa />
                         <Faixa />

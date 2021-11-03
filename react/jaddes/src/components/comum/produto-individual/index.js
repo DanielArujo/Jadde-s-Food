@@ -1,13 +1,15 @@
 import { Link } from 'react-router-dom'
 import Container from "./styled"
 
-export default function Produto(){
+
+
+export default function Produto(props){
     return(
         <Container>
-            <div class="imagens">
-                <div class="comida"> <Link to="/carrinho" >   <img src="../assets/images/burgao.svg" alt="" /> </Link> </div>
+            <div className="imagens">
+                <div className="comida"> <Link to="/carrinho" > <img src={props.info.ds_imagem} alt="" /> </Link> </div>
                 
-                <div class="preco"> Preço </div>
+                <div className="preco">  {props.info.vl_produto} </div>
             </div>         
         </Container>
     )

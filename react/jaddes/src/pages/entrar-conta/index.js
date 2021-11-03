@@ -6,29 +6,29 @@ import Rodape from "../../components/comum/rodape"
 export default function Login(){
     return(
         <Container>
-            <div class="box-principal">
-                <div class="img-principal"><img src="" alt="" /></div>
-                <div class="box-login">
+            <div className="box-principal">
+                <div className="img-principal"><img src="" alt="" /></div>
+                <div className="box-login">
                     <a href="/">
-                        <div class="box-name">
-                            <div class="name-restaurant">Jadde's</div>
-                            <div class="second-name-restaurant">Food</div>
+                        <div className="box-name">
+                            <div className="name-restaurant">Jadde's</div>
+                            <div className="second-name-restaurant">Food</div>
                         </div>
                     </a>
-                    <div class="box-inputs">
-                        <div class="input-login">
-                            <div class="info-login"><b> E-mail: </b></div>
+                    <div className="box-inputs">
+                        <div className="input-login">
+                            <div className="info-login"><b> E-mail: </b></div>
                             <input />
                         </div>
-                        <div class="input-login">
-                            <div class="info-login"><b>Senha: </b></div>
+                        <div className="input-login">
+                            <div className="info-login"><b>Senha: </b></div>
                             <input />
                             
                         </div>
-                        <div class="box-forgot"> <a href="/esqueci"> Esqueci minha senha </a></div>
+                        <div className="box-forgot"> <a href="/esqueci"> Esqueci minha senha </a></div>
                     </div>
                     <button>Entrar</button>
-                    <div class="box-creat-account">  Ainda não tem uma conta? <a href="/create">Crie Agora </a></div>
+                    <div className="box-creat-account">  Ainda não tem uma conta? <a href="/create">Crie Agora </a></div>
                 </div>
             </div>
             <Rodape />
