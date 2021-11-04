@@ -77,6 +77,7 @@ const Container = styled.div`
     margin-bottom: 2em;
     border-radius: 10px;
     border: none;
+    outline: none;
 }
 
 .inputs-direita{

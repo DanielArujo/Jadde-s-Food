@@ -3,44 +3,68 @@ import styled from "styled-components";
 
 const Container = styled.div`
     display: flex;
-    flex-direction: row;
-
-    align-items: center;
-    justify-content: space-around;
+    flex-direction: column;
 
     margin: 1em;
-    height: 20vh;
-    width: 20em;
+    height: auto;
+    width: 30em;
     padding: 0.5em 1em;
 
     background-color: #FFFFFF;
     border-radius: 10px;
     border-bottom:solid #BBAEAE;
 
+input{
+    width: 100%;
+    outline: none;
+    border-radius: 10px;
+    padding: 0.3em 1em;
+    border: solid 1px gray;
+    align-self: center;
+}
+
+
+
+b{
+    margin-right: 5px;
+}
+
+.top-info{
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: space-around;
+
+    margin: 1em;
+    height: auto;
+    border-radius: 10px;
+}
 
 .produto-info{
     margin: 0em 1em;
 }
 
-.img img{
-    height: 5em;
-    width: 7em;
-    border-radius: 10px;
+
+.produto-info > div{
+    margin: 0.5em 0em;
 }
 
-.name{
-    margin-bottom: 0.5em;
+.img img{
+    height: 7em;
+    width: 10em;
+    border-radius: 10px;
 }
 
 .box-botoes button{
     border: none;
     border-radius: 10px;
     padding: 0.3em 0.8em;
+    margin-bottom: 1em;
 }
 
 .alterar button{
     background-color: #7ccf0f;
-    margin-bottom: 0.5em;
 }
 
 .deletar button{
@@ -55,6 +79,9 @@ const Container = styled.div`
     background-color: #e42828;
 }
 
+.desc{
+    margin-left: 2em;
+}
 
 
 `

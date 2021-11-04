@@ -9,16 +9,25 @@ const api = new Api();
 export default function Produtos(){
 
     const [produto, setProduto] = useState([]);
+    const [idAlterando, setIdAlterando] = useState(0)
+
+
 
     async function mostrar(){
         let r = await api.show();
-        console.log(r.data);
-        setProduto(r.data);
+        console.log(r);
+        setProduto(r);
     }
 
     async function deletar(id){
-        let r = await api.delete(id);
+        await api.delete(id);
         alert('apagou ein')
+        mostrar();
+    }
+
+    async function alterar(id, produto, valor, descricao, categoria, img, codigo){
+        await api.change(id, produto, valor, descricao, categoria, img, codigo)
+        alert('alterou??')
         mostrar();
     }
 
@@ -43,7 +52,8 @@ export default function Produtos(){
                         {produto.map(item => 
                             <Management key={item.id_produto}
                                         info={item}  
-                                        onDelete={deletar}/>
+                                        onDelete={deletar}
+                                        onChange={alterar}/>
                             )} 
                 </div>  
             </div>

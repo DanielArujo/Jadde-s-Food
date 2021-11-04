@@ -8,15 +8,23 @@ const api = axios.create({
 export default class Api{
 
     async show(){
-       return await api.get('/produto')
+        let r = await api.get('/produto')
+        return(r.data)
     } 
 
     async insert(produto, valor, descricao, categoria, img, codigo){
-    return await api.post('/produto', {produto, valor, descricao, categoria, img, codigo})
+        let r = await api.post('/produto', {produto, valor, descricao, categoria, img, codigo})
+        return(r.data)
     }
 
     async delete(id){
-    return await api.delete('/produto/' + id)
+        let r = await api.delete('/produto/' + id)
+        return(r.data)
+    }
+
+    async change(id, produto, valor, descricao, categoria, img, codigo){
+        let r = await api.put('/produto/' + id, {produto, valor, descricao, categoria, img, codigo})
+         return(r.data)
     }
         
 
