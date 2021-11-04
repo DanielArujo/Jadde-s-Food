@@ -17,7 +17,7 @@ export default function Faixa(){
     }
 
 
-   useEffect( () => {mostrar()}, [produto])  
+   useEffect( () => {mostrar()}, [])  
 
 
     return(
