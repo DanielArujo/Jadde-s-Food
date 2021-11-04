@@ -76,11 +76,11 @@ const Container = styled.div`
 
 .box-produtos::-webkit-scrollbar-track{
         border-radius: 10px;
-        background-color: gray;
+        background-color: #F3EAD7;
     }
 .box-produtos::-webkit-scrollbar{
         width: 7px;
-        background-color: gray;
+        background-color: #F3EAD7;
         border-radius: 10px;
     }
 .box-produtos::-webkit-scrollbar-thumb{
