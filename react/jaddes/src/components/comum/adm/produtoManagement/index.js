@@ -24,7 +24,7 @@ export default function Management(props){
     }
 
 
-    function altt(){
+    function onCh(){
         setProduto();
         setValor();
         setDescricao();
@@ -37,7 +37,8 @@ export default function Management(props){
     return(
         <Container>
             <div className="top-info">
-            {isChange === false ? <div className="img"> <img src={props.info.ds_imagem} alt="" /> </div>: <img src="../assets/images/img-produto.svg" alt="" />}
+            {isChange === false ? <div className="img"> <img src={props.info.ds_imagem} alt="" /> </div>: <input placeholder={props.info.ds_imagem}
+                                                            type="text" value={img}  onChange={e => setImg(e.target.value)} />}
                 <div className="produto-info">
                 {isChange === false ? <div><b>Nome: </b>{props.info.nm_produto}  </div> : <input placeholder={props.info.nm_produto}
                                                             type="text" value={produto}  onChange={e => setProduto(e.target.value)} />}
@@ -50,7 +51,7 @@ export default function Management(props){
                                                             type="text" value={categoria}  onChange={e => setCategoria (e.target.value)} />}
                 </div>
                 <div className="box-botoes">
-                    <div className="alterar"> <button onClick={altt}> Alterar</button></div>
+                    <div className="alterar"> <button onClick={onCh}> Alterar</button></div>
                     <div className="deletar"> <button onClick={deletar}> Deletar</button></div>
                     <div className="deletar"> <button onClick={alterar}> Confirmar</button></div>
                 </div>

@@ -12,8 +12,8 @@ export default function Faixa(){
 
     async function mostrar(){
         let r = await api.show();
-        console.log(r.data);
-        setProduto(r.data);
+        console.log(r);
+        setProduto(r);
     }
 
 
