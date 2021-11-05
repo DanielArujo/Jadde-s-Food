@@ -18,7 +18,7 @@ export default function Jaddes(){
                 
                 <div className="img-inicial">
                     <div className="texto-inicial"> Nós do Jadde's Food oferecemos o melhor ao nossos clientes, desde o conforto dos nossos restaurantes, até a melhor comida de São Paulo! Não passe vontade, se direcione a unidade mais próxima de você e aproveite!</div>
-                    <img src="../assets/images/img-tela-inicial.svg" alt="" /> 
+                    <img src="../assets/images/img-tela-inicial.png" alt="" /> 
                 </div>   
                 <div className="Faixa-1">  
                     <Filtrar />
