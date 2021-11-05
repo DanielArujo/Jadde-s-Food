@@ -13,12 +13,12 @@ export default function Management(props) {
     const [isChange, setIsChange] = useState(false)
 
     function deletar() {
-        let r = props.onDelete(props.info.id_produto)
+        props.onDelete(props.info.id_produto)
         console.log(props.info.id);
     }
 
     function alterar() {
-        let r = props.onChange(props.info.id_produto, produto, valor, descricao, categoria, img, codigo)
+        props.onChange(props.info.id_produto, produto, valor, descricao, categoria, img, codigo)
         console.log(produto);
         setIsChange(false);
     }

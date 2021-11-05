@@ -2,7 +2,7 @@
 import Cabecalho from "../../components/comum/cabecalho";
 import Rodape from "../../components/comum/rodape";
 import Container from "./styled";
-import { useState, /*useEffect */ } from 'react';
+import { useState, useEffect } from 'react';
 import CarrinhoItem from "../../components/comum/carrinho-item";
 //import { Link } from "react-router-dom";
 import Sucesso from "../../components/pedido-feito";
@@ -18,7 +18,7 @@ export default function Carrinho(){
     const [mostrarConfirmado, setMostrarConfirmado] = useState(false); 
     
     
-    //useEffect(mostrar, []);
+    useEffect(mostrar, []);
 
     function mostrar(){
         const r = [

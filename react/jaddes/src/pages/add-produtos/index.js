@@ -1,6 +1,6 @@
 import Container from "./styled";
 import Api from "../../service/api";
-import { useEffect, useState } from "react";
+import {useState } from "react";
 const api = new Api();
 
 
@@ -15,7 +15,7 @@ export default function AddProdutos(){
 
 
     async function inserir(){
-        const r = await api.insert(produto, valor, descricao, categoria, img, codigo);
+        await api.insert(produto, valor, descricao, categoria, img, codigo);
         alert('opa foi!')
         limpar();
     }

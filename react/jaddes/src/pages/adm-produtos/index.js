@@ -9,7 +9,6 @@ const api = new Api();
 export default function Produtos(){
 
     const [produto, setProduto] = useState([]);
-    const [idAlterando, setIdAlterando] = useState(0)
 
 
 
