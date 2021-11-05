@@ -48,7 +48,7 @@ export default function Carrinho(){
           setPedidos(r)
     }
 
-
+    console.log(pedidos)
 
 
 
