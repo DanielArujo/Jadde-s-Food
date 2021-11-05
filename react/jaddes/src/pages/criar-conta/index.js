@@ -1,12 +1,13 @@
 
 import Container from "./styled"
 import Rodape from "../../components/comum/rodape"
+import { Link } from "react-router-dom"
 
 export default function Create(){
     return(
         <Container>
             <div className="box-principal">
-                <div className="Voltar"> <a href="/login"> <button>Voltar</button> </a></div>
+                <div className="Voltar"><Link to="/login"> <button>Voltar</button> </Link></div>
                 <div className="titulo">Criar Conta</div>
                 <div className="box-login">
                     <div className="box-inputs-esquerda">

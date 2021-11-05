@@ -5,8 +5,7 @@ const Container = styled.div`
     display: flex;
     flex-direction: column;
     padding: 2em;
-    background-image: url('../assets/images/img-rodape.svg');
-    background-size: 100%;
+    background-color: #78290F;
 
 .box-name-rodape{
     margin-bottom: 1em;

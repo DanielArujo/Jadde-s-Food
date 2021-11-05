@@ -23,6 +23,11 @@ width: 60%;
 height: auto;
 }
 
+.img-principal img{
+    width: 100%;
+    height: 100vh;
+}
+
 .box-login{
 display: flex;
 flex-direction: column;

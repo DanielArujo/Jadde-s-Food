@@ -14,12 +14,12 @@ export default function CabecalhoLogado(){
                 </div>
                 <div className="Informacoes">
                     <div > Delivery</div>
-                    <div >  <Linkinicial href="/pedidos" > Pedidos </Linkinicial></div>
-                    <div > <Linkinicial href="/sobremesas"> Cardápio </Linkinicial></div>
+                    <Link to="/pedidos">  <Linkinicial> Pedidos </Linkinicial> </Link>
+                    <Link to="/sobremesas"> <Linkinicial>  Cardápio </Linkinicial> </Link>
                 </div>
                 <div className="botoes-cabecalho"> 
-                <Link to='/carrinho'> <button>  <img src="../assets/images/carrinho-img.svg" alt="" /> </button> </Link> 
-                <Link to="/"><button> <img src="../assets/images/logout-img.svg" alt="" /></button> </Link>
+                    <Link to='/carrinho'> <button>  <img src="../assets/images/carrinho-img.svg" alt="" /> </button> </Link> 
+                    <Link to="/"><button> <img src="../assets/images/logout-img.svg" alt="" /></button> </Link>
                 </div>
             </Container>
     )
