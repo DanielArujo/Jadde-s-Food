@@ -8,6 +8,7 @@ const Container = styled.div`
     justify-content: center;
     min-height: 100vh;
     background-color: #F3EAD7;
+    padding: 3em;
     
 
 .link{

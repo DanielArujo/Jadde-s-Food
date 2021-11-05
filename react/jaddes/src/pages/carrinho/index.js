@@ -6,6 +6,7 @@ import { useState, useEffect } from 'react';
 import CarrinhoItem from "../../components/comum/carrinho-item";
 //import { Link } from "react-router-dom";
 import Sucesso from "../../components/pedido-feito";
+import { Link } from "react-router-dom";
 
 
 
@@ -58,7 +59,7 @@ export default function Carrinho(){
             <div className="box-carrinho"> 
                 <div className="box-inicio"> 
                     <div className="nome-carrinho">Carrinho: </div>
-                    <div className="voltar-carrinho"> <button>Voltar </button> </div>
+                    <div className="voltar-carrinho"> <Link to='/bebidas'> <button>Voltar </button> </Link> </div>
                 </div>
                 <div className="box-pedido-carrinho"> 
                     <div className="info-pedido"> 
@@ -80,7 +81,7 @@ export default function Carrinho(){
                         </div>
                     </div>
                     <div className="finalization">
-                        <button className="add"> Adicionar no Carrinho </button>
+                        <Link to='/lanches'> <button className="add"> Adicionar no Carrinho </button> </Link>
                         <button className="confirm" onClick={() => setMostrarConfirmado(true)} > Confirmar Pedido </button>
                         
                     </div>
