@@ -24,6 +24,7 @@ justify-content: center;
 
 background-image: url('../assets/images/img-principal-lanches.svg');
 background-size: 100%;
+background-repeat: no-repeat;
 background-position-y: 100%;
 }
 

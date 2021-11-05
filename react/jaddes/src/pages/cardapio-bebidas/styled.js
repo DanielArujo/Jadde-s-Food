@@ -23,6 +23,7 @@ align-items: center;
 justify-content: center;
 
 background-position-y: 100%;
+background-repeat: no-repeat;
 background-image: url('../assets/images/img-principal-bebidas.svg');
 background-size: 100%;
 }

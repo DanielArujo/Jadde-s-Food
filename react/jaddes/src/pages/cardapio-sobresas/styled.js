@@ -22,6 +22,7 @@ background-color: #F3EAD7;
     background-image: url('../assets/images/img-principal-sobremesa.svg');
     background-size: 100%;
     background-position-y: 100%;
+    background-repeat: no-repeat;
 
     align-items: center;
     justify-content: center;
