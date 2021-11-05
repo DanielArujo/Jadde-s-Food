@@ -1,5 +1,6 @@
 import Container from "./styled"
 import Linkinicial from "../../styled/link-ini"
+import { Link } from "react-router-dom"
 
 export default function CabecalhoLogado(){
     return(
@@ -17,7 +18,7 @@ export default function CabecalhoLogado(){
                     <div > <Linkinicial href="/sobremesas"> Cardápio </Linkinicial></div>
                 </div>
                 <div className="botoes-cabecalho"> 
-                <a href="/carrinho"><button>  <img src="../assets/images/carrinho-img.svg" alt="" /> </button> </a>
+                <Link to='/carrinho'> <button>  <img src="../assets/images/carrinho-img.svg" alt="" /> </button> </Link> 
                 <a href="/"><button> <img src="../assets/images/logout-img.svg" alt="" /></button> </a>
                 </div>
             </Container>
