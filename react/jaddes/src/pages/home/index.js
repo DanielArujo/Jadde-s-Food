@@ -12,6 +12,7 @@ export default function Home(){
             <div className='link'> <Link to='/login'> <button> Entrar-cliente </button> </Link> </div>
             <div className='link'> <Link to='/create'> <button> Criar Conta </button> </Link> </div>
             <div className='link'> <Link to='/esqueci'> <button> Esqueceu Senha </button> </Link> </div>
+            <div className='link'> <Link to='/esqueci'> <button> Esqueceu Senha </button> </Link> </div>
             <div className='link'> <Link to='/tela-inicial'> <button> Tela Inicial </button> </Link> </div>
             <div className='link'> <Link to='/lanches'> <button> Cardapio - Lanches </button> </Link> </div>
             <div className='link'> <Link to='/pedidos'> <button> Pedidos - Amd </button> </Link> </div>
