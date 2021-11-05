@@ -18,7 +18,7 @@ export default function Jaddes(){
                 
                 <div className="img-inicial">
                     <div className="texto-inicial"> Nós do Jadde's Food oferecemos o melhor ao nossos clientes, desde o conforto dos nossos restaurantes, até a melhor comida de São Paulo! Não passe vontade, se direcione a unidade mais próxima de você e aproveite!</div>
-                    <img src="../assets/images/img-tela-inicial.png" alt="" /> 
+                    <img src="../assets/images/img-tela-inicial.svg" alt="" /> 
                 </div>   
                 <div className="Faixa-1">  
                     <Filtrar />
@@ -30,7 +30,7 @@ export default function Jaddes(){
                 </div>
 
                 <div className="Faixa-2">
-                    <div> <img src="../assets/images/img-f2.svg" alt="" /> </div>
+                    <div> <img src="../assets/images/img-f2.png" alt="" /> </div>
                     <h1 id="vendido"> Mais Vendidos:</h1>
 
                     <FaixaProdutoPop />

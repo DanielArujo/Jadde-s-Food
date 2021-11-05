@@ -100,6 +100,10 @@ h1{
     margin: 1em;
 }
 
+.Faixa-2 img{
+    width: 100%;
+}
+
 
 `
 
