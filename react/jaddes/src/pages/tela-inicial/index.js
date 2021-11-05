@@ -30,7 +30,7 @@ export default function Jaddes(){
                 </div>
 
                 <div className="Faixa-2">
-                    <div> <img src="../assets/images/img-f2.png" alt="" /> </div>
+                    <div> <img src="" alt="" /> </div>
                     <h1 id="vendido"> Mais Vendidos:</h1>
 
                     <FaixaProdutoPop />
