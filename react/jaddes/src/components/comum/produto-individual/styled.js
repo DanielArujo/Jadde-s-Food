@@ -3,7 +3,7 @@ import styled from "styled-components";
 const Container = styled.div`
     display: flex;
     flex-direction: column;
-
+    margin: 1em 2em;
 
 .imagens{
 display: flex;

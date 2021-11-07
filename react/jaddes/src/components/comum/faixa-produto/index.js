@@ -1,21 +1,26 @@
-//import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
+
+import Carousel from 'react-multi-carousel';
+
 import Container from "./styled"
 import Produto from "../produto-individual"
 import { useEffect, useState } from "react"
 import Api from "../../../service/api";
-
+import 'react-multi-carousel/lib/styles.css';
 
 const api = new Api();
-/*const responsive = {
+
+  
+
+export default function Faixa(){
+  const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
-      items: 5
+      items: 4
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 3
+      items: 4
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
@@ -26,9 +31,6 @@ const api = new Api();
       items: 1
     }
   };
-  */
-
-export default function Faixa(){
 
     const [produto, setProduto] = useState([]);
 
@@ -45,16 +47,20 @@ export default function Faixa(){
     return(
         <Container>
             <div className="Nome"> Hambúrguer com Carne</div>
-    
                 <div className="box-produtos">
-                {produto.map(item => 
-                <Produto key={item.id_produto}
+                <Carousel 
+                responsive={responsive}
+                infinite={true}
+                showDots={true}
+                containerClass="carousel-container"
+                > 
+                  {produto.map(item => 
+                    <Produto key={item.id_produto}
                         info={item}
-                 />
-                )}
-            </div> 
-            
-            
+                    />
+                    )}
+                  </Carousel>
+                </div> 
         </Container>
     )
 }
