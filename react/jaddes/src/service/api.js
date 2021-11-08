@@ -1,12 +1,14 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: 'https://jaddesheroku.herokuapp.com/'
+    baseURL: 'https://localhost:3030'
 })
 
 
 export default class Api{
 
+
+    // Produtos
     async show(){
         let r = await api.get('/produto')
         return(r.data)
@@ -27,5 +29,11 @@ export default class Api{
          return(r.data)
     }
         
+
+    //Cliente
+    async insertUsu(nome, telefone , email, senha, endereco, numeroEndereco, complemento){
+        let r = await api.post('/cliente', {nome, telefone, email, senha, endereco, numeroEndereco, complemento});
+        return(r.data)
+    }
 
 }
