@@ -36,4 +36,9 @@ export default class Api{
         return(r.data)
     }
 
+    async logar(email, senha){
+        let r = await api.get('/cliente', {email, senha})
+        return r.data
+    }
+
 }

@@ -21,7 +21,18 @@ const [ complemento ] = useState('');
 
 async function cadastrar(){
     await api.insertUsu(nome, telefone, email, senha, endereco, numeroEndereco, complemento)
+    limpar();
+}
 
+
+
+function limpar(){
+    setNome('');
+    setTelefone('');
+    setEmail('');
+    setSenha('');
+    setEndereco('');
+    setNumeroEndereco('');
 }
 
 
