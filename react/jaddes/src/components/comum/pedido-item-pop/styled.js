@@ -4,9 +4,12 @@ import styled from "styled-components";
 export const Container = styled.div`
     display: flex;
     flex-direction: column;
+    margin: 2em 2em;
 
 img{
     margin-bottom: 1em;
+    width: auto;
+    height: 250px;
 }
 
 .price{

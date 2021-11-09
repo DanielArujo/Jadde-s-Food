@@ -100,6 +100,11 @@ h1{
     margin: 1em;
 }
 
+.Faixa-2 {
+    display: flex;
+    flex-direction: column;
+}
+
 .Faixa-2 img{
     width: 100%;
 }
