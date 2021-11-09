@@ -4,12 +4,14 @@ import { Link } from "react-router-dom"
 import Cookies  from "js-cookie"
 import { useEffect } from "react";
 
-let usuarioLogado = Cookies.get('logado');
-    console.log(usuarioLogado)
+const usuarioLogado = Cookies.get('logado');
+
 
 export default function Cabecalho(){
-
-    useEffect( () => {Cookies.get('logado')}, [])  
+    
+  
+   useEffect( () => {Cookies.get('logado')}, [])  
+   console.log(usuarioLogado);
 
     if (usuarioLogado === undefined){
     return(
