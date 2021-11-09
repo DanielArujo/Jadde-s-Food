@@ -5,6 +5,7 @@ import { Link } from "react-router-dom"
 import Api from "../../service/apiCliente"
 import { useState } from "react";
 import { useHistory } from 'react-router-dom'
+import Cookies from "js-cookie";
 
 
 const api = new Api();
@@ -21,11 +22,9 @@ async function logando(){
     if(r.erro){
         return r.erro
     }else{
+        Cookies.set('logado', JSON.stringify(r))
         navigation.push('/tela-inicial')
-    }
-
-
-    
+    }    
 }
 
 

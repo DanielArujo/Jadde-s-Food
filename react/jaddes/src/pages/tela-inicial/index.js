@@ -1,15 +1,21 @@
 
 import { Container } from "./styled"
-import CabecalhoLogado from "../../components/comum/cabecalho-logado"
+import Cabecalho from "../../components/comum/cabecalho"
 import Rodape from "../../components/comum/rodape"
 import Filtrar from "../../components/comum/botao-filtrar"
 import FaixaProdutoPop from "../../components/comum/faixa-produto-pop"
+import Cookies from "js-cookie"
+
+
+Cookies.get('logado');
+
 
 export default function Jaddes(){
+
+    
     return(
         <Container>
-            <CabecalhoLogado />
-
+            <Cabecalho />
             <div className="box-principal">
                 <div className="Bottom-bar"> 
                     <a href="#vendido"><button> Mais Vendidos </button></a>

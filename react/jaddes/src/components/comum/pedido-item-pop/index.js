@@ -1,11 +1,11 @@
 import { Container } from "./styled";
 
 
-export default function PedidoItemPop(){
+export default function PedidoItemPop(props){
     return(
         <Container>
-            <img src="../assets/images/burgao.svg" alt="" />
-            <div className="price"> Preço </div>  
+            <img src={props.info.ds_imagem} alt="" />
+            <div className="price"> {props.info.vl_produto} </div>  
         </Container>    
     )
 }

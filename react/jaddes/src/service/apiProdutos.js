@@ -29,4 +29,8 @@ export default class Api{
          return(r.data)
     }
 
+    async moreSailed(){
+        let r = await api.get('/produto/maisVendido')
+        return r.data
+    }
 }
