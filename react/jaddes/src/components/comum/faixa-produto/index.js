@@ -4,7 +4,7 @@ import Carousel from 'react-multi-carousel';
 import Container from "./styled"
 import Produto from "../produto-individual"
 import { useEffect, useState } from "react"
-import Api from "../../../service/api";
+import Api from "../../../service/apiProdutos";
 import 'react-multi-carousel/lib/styles.css';
 
 const api = new Api();

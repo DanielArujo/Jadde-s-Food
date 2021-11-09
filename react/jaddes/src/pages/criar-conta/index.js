@@ -2,8 +2,10 @@
 import Container from "./styled"
 import Rodape from "../../components/comum/rodape"
 import { Link } from "react-router-dom"
-import Api  from "../../service/api"
+import Api  from "../../service/apiCliente"
 import { useState } from "react";
+
+
 
 const api = new Api();
 
@@ -17,6 +19,7 @@ const [ senha, setSenha ] = useState('');
 const [ endereco, setEndereco ] = useState('');
 const [ numeroEndereco, setNumeroEndereco ] = useState();
 const [ complemento ] = useState('');
+
 
 
 async function cadastrar(){

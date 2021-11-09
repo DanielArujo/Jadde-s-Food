@@ -2,8 +2,10 @@
 import Container from "./styled"
 import Rodape from "../../components/comum/rodape"
 import { Link } from "react-router-dom"
-import Api from "../../service/api"
+import Api from "../../service/apiCliente"
 import { useState } from "react";
+import { useHistory } from 'react-router-dom'
+
 
 const api = new Api();
 
@@ -12,11 +14,20 @@ export default function Login(){
 const [email, setEmail] = useState('');
 const [senha, setSenha] = useState('');
 
+const navigation = useHistory();
 
-async function logado(){
-    let r = await api.logar(email, senha);
-    console.log(email)
+async function logando(){
+    let r = await api.logar(email, senha)
+    if(r.erro){
+        return r.erro
+    }else{
+        navigation.push('/tela-inicial')
+    }
+
+
+    
 }
+
 
     return(
         <Container>
@@ -41,7 +52,7 @@ async function logado(){
                         </div>
                         <div className="box-forgot"> <Link to="/esqueci"> Esqueci minha senha </Link></div>
                     </div>
-                    <button onClick={logado}> Entrar </button>
+                    <button onClick={logando}> Entrar </button>
                     <div className="box-creat-account">  Ainda não tem uma conta? <Link to="/create">Crie Agora </Link></div>
                 </div>
             </div>

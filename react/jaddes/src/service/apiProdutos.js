@@ -28,17 +28,5 @@ export default class Api{
         let r = await api.put('/produto/' + id, {produto, valor, descricao, categoria, img, codigo})
          return(r.data)
     }
-        
-
-    //Cliente
-    async insertUsu(nome, telefone , email, senha, endereco, numeroEndereco, complemento){
-        let r = await api.post('/cliente', {nome, telefone, email, senha, endereco, numeroEndereco, complemento});
-        return(r.data)
-    }
-
-    async logar(email, senha){
-        let r = await api.get('/cliente', {email, senha})
-        return r.data
-    }
 
 }

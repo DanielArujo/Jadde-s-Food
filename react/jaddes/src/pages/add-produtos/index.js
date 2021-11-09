@@ -1,5 +1,5 @@
 import Container from "./styled";
-import Api from "../../service/api";
+import Api from "../../service/apiProdutos";
 import {useState } from "react";
 import CabecalhoAdm from "../../components/comum/adm/cabecalho";
 

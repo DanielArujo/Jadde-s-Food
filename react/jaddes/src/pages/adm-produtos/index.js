@@ -1,6 +1,6 @@
 import Container from "./styled";
 import Management from "../../components/comum/adm/produtoManagement";
-import Api from "../../service/api";
+import Api from "../../service/apiProdutos";
 import { useEffect, useState } from "react";
 import CabecalhoAdm from "../../components/comum/adm/cabecalho";
 
