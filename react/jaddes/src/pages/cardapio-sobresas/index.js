@@ -3,9 +3,26 @@ import Cabecalho from "../../components/comum/cabecalho";
 import Rodape from "../../components/comum/rodape";
 import Faixa from "../../components/comum/faixa-produto";
 import Filtrar from "../../components/comum/botao-filtrar";
+import Api from "../../service/apiProdutos";
+import { useEffect, useState } from "react";
+
+const api = new Api();
+
 
 
 export default function CardapioSobremesas(){
+
+    const [ produto, setProduto ] = useState('')
+
+
+    async function mostrar(){
+        let r = await api.show();
+        setProduto(r);
+    }
+
+    useEffect( () => {mostrar()}, [])  
+    
+
     return(
         <Container>
             <Cabecalho />
@@ -21,8 +38,8 @@ export default function CardapioSobremesas(){
                         
                     </div>
                     <div className="Faixa-cardapio">
-                        <Faixa />
-                        <Faixa />
+                        <Faixa info={produto} />
+                        <Faixa info={produto} />
                         <Faixa />
                         <Faixa />
                         <Faixa />

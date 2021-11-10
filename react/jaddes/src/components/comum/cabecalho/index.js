@@ -7,7 +7,9 @@ import { useEffect } from "react";
 const usuarioLogado = Cookies.get('logado');
 
 
+
 export default function Cabecalho(){
+    
     
   
    useEffect( () => {Cookies.get('logado')}, [])  
