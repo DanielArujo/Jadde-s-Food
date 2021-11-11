@@ -7,6 +7,11 @@ const api = axios.create({
 
 export default class Api{
 
+    async conferir(){
+        let r = await api.get('/cliente')
+        return r.data
+    }
+
     async insertUsu(nome, telefone , email, senha, endereco, numeroEndereco, complemento){
         let r = await api.post('/cliente', {nome, telefone, email, senha, endereco, numeroEndereco, complemento});
         return(r.data)

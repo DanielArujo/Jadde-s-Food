@@ -4,12 +4,12 @@ import { Link } from "react-router-dom"
 import Cookies  from "js-cookie"
 import { useEffect } from "react";
 
-const usuarioLogado = Cookies.get('logado');
 
 
 
 export default function Cabecalho(){
     
+    const usuarioLogado = Cookies.get('logado');
     
   
    useEffect( () => {Cookies.get('logado')}, [])  
@@ -51,7 +51,7 @@ export default function Cabecalho(){
             </div>
             <div className="botoes-cabecalho"> 
                 <Link to='/carrinho'> <button>  <img src="../assets/images/carrinho-img.svg" alt="" /> </button> </Link> 
-                <Link to="/tela-inicial"><button onClick={Cookies.remove('logado')}> <img src="../assets/images/logout-img.svg" alt="" /></button> </Link>
+                <Link to="/tela-inicial"><button onClick={() => Cookies.remove('logado')}> <img src="../assets/images/logout-img.svg" alt="" /></button> </Link>
             </div>
         </ContainerLogado>
         )

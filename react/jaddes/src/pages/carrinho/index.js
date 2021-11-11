@@ -7,19 +7,26 @@ import CarrinhoItem from "../../components/comum/carrinho-item";
 //import { Link } from "react-router-dom";
 import Sucesso from "../../components/pedido-feito";
 import { Link } from "react-router-dom";
+import Api from "../../service/apiCliente";
 
+const api = new Api();
 
 
 
 export default function Carrinho(){
 
 
+    const [informations, setInformations] = useState([])
 
     const [pedidos, setPedidos] = useState([])
     const [mostrarConfirmado, setMostrarConfirmado] = useState(false); 
     
-    
-    useEffect(mostrar, []);
+    async function mostrarInfo(){
+        let r = api.conferir()
+        setInformations(r);
+    }
+
+    useEffect(mostrarInfo, []);
 
     function mostrar(){
         const r = [
@@ -58,7 +65,7 @@ export default function Carrinho(){
             <Cabecalho />
             <div className="box-carrinho"> 
                 <div className="box-inicio"> 
-                    <div className="nome-carrinho">Carrinho: </div>
+                    <div className="nome-carrinho">Carrinho: {informations.ds_endereco} </div>
                     <div className="voltar-carrinho"> <Link to='/bebidas'> <button>Voltar </button> </Link> </div>
                 </div>
                 <div className="box-pedido-carrinho"> 

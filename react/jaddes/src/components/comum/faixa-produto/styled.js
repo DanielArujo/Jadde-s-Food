@@ -18,6 +18,13 @@ flex-direction: row;
 justify-content: space-around;
 background-color: #e5cd99;
 padding: 1em 0em;
+height: 20em;
+width: 100%
+}
+
+.carousel-container{
+    height: 20em;
+    width: 100%;
 }
 
 `

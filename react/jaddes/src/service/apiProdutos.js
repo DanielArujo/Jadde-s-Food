@@ -11,7 +11,7 @@ export default class Api{
     // Produtos
     async show(){
         let r = await api.get('/produto')
-        return(r.data)
+        return r.data
     } 
 
     async meat(){
