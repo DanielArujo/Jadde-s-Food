@@ -32,25 +32,36 @@ export default function Faixa(props){
     }
   };
 */
-    const [produto, setProduto] = useState([]);
+    //const [produto, setProduto] = useState([]);
+    const [ carne, setCarne ] = useState([]);
+    //const isCarne = props.info;
 
-    async function mostrar(){
-        let r = await api.show();
-        setProduto(r);
-    }
 
-   useEffect( () => {mostrar()}, [])  
+   // async function mostrar(){
+    //    let r = await api.show();
+    //    setProduto(r);
+   // }
+
+    async function isMeat(){
+      let r = await api.meat();
+      setCarne(r);
+  }
+
+   useEffect( () => {isMeat()}, [])  
 
     return(
         <Container>
             <div className="Nome"> Hambúrguer com Carne</div>
-                <div className="box-produtos">
-                  {produto.map(item => 
+                
+               <div className="box-produtos">
+                  {carne.map(item => 
                     <Produto key={item.id_produto}
                         info={item}
                     />
                     )}
-                </div> 
+            
+                </div>
+                 
         </Container>
     )
 }

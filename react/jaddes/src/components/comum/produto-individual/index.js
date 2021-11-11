@@ -11,6 +11,6 @@ export default function Produto(props){
                 
                 <div className="preco">  {props.info.vl_produto} </div>
             </div>         
-        </Container>
+        </Container>    
     )
 }

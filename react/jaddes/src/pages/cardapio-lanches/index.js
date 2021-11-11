@@ -4,9 +4,13 @@ import Cabecalho from "../../components/comum/cabecalho";
 import Rodape from "../../components/comum/rodape";
 import Faixa from "../../components/comum/faixa-produto";
 import Filtrar from "../../components/comum/botao-filtrar";
+//import { useState } from "react";
 
 
 export default function CardapioLanches(){
+
+   const carne = false;
+
     return(
         <Container>
             <Cabecalho />
@@ -21,7 +25,7 @@ export default function CardapioLanches(){
                         <Filtrar />
                     </div>
                     <div className="Faixa-cardapio">
-                        <Faixa />
+                        <Faixa info={carne} />
                         <Faixa />
                         <Faixa />
                         <Faixa />
