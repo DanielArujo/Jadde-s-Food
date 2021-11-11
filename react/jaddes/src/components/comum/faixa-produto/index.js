@@ -37,9 +37,9 @@ export default function Faixa(props){
     //const isCarne = props.info;
 
 
-   // async function mostrar(){
-    //    let r = await api.show();
-    //    setProduto(r);
+    // async function mostrar(){
+      //    let r = await api.show();
+      //    setProduto(r);
    // }
 
     async function isMeat(){
@@ -48,20 +48,20 @@ export default function Faixa(props){
   }
 
    useEffect( () => {isMeat()}, [])  
-
-    return(
+   
+  return(
         <Container>
             <div className="Nome"> Hambúrguer com Carne</div>
-                
-               <div className="box-produtos">
+            
+            <div className="box-produtos">
                   {carne.map(item => 
                     <Produto key={item.id_produto}
                         info={item}
                     />
                     )}
             
-                </div>
-                 
+                </div> 
+                        
         </Container>
     )
 }
