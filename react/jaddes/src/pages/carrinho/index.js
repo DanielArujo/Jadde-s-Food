@@ -57,7 +57,7 @@ export default function Carrinho(){
     }
 
     console.log(pedidos)
-
+    console.log(informations + 'por favoror')
 
 
     return(

@@ -1,14 +1,14 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL:'https://jaddesheroku.herokuapp.com/'
+    baseURL:"https://jaddesheroku.herokuapp.com/"
 })
 
 
 export default class Api{
 
     async conferir(){
-        let r = await api.get('/cliente')
+        let r = await api.get('/')
         return r.data
     }
 
