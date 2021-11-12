@@ -87,6 +87,7 @@ export default function Carrinho(){
                         <div className="info-pedido-bottom">
                             <div className="usu-info">
                                 <div className="text-carrinho">Endereço: { cliente.ds_endereco} </div>
+                                <div className="text-carrinho">Numero da Residência: { cliente.nr_endereco } </div>
                                 <div className="text-carrinho">Telefone: { cliente.nr_telefone } </div>
                                 <button className="button-padrao">Alterar Informaçoes </button>    
                             </div>

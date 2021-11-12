@@ -33,7 +33,7 @@ async function logando(){
             <div className="box-principal">
                 <div className="img-principal"><img src="../assets/images/login-img.jpeg" alt="" /></div>
                 <div className="box-login">
-                    <Link to="/">
+                    <Link to="/tela-inicial">
                         <div className="box-name">
                             <div className="name-restaurant">Jadde's</div>
                             <div className="second-name-restaurant">Food</div>
@@ -42,11 +42,11 @@ async function logando(){
                     <div className="box-inputs">
                         <div className="input-login">
                             <div className="info-login"><b> E-mail: </b></div>
-                            <input value={email} onChange={e => setEmail(e.target.value)} />
+                            <input value={email} type={"email"} onChange={e => setEmail(e.target.value)} />
                         </div>
                         <div className="input-login">
                             <div className="info-login"><b>Senha: </b></div>
-                            <input value={senha} onChange={e => setSenha(e.target.value)} />
+                            <input value={senha} type={"password"} onChange={e => setSenha(e.target.value)} />
                             
                         </div>
                         <div className="box-forgot"> <Link to="/esqueci"> Esqueci minha senha </Link></div>

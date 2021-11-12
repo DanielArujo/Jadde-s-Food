@@ -29,7 +29,7 @@ export default function Cabecalho(){
     if (usuarioLogado === false){
     return(
         <Container>
-                <Link to="/"><div className="Titulo"> 
+                <Link to="/tela-inicial"><div className="Titulo"> 
                     <div className="name-restaurant">Jadde's</div>
                     <div className="second-name-restaurant">Food</div>
                 </div></Link>
