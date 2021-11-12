@@ -1,4 +1,5 @@
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import Container from "./styled"
 import Rodape from "../../components/comum/rodape"
 import { Link } from "react-router-dom"
@@ -27,11 +28,13 @@ async function cadastrar(){
     let r = await api.insertUsu(nome, telefone, email, senha, endereco, numeroEndereco, complemento)
 
     if(r.erro){
-        alert("Deu erro ai")
-    }
+        toast("Deu erro ai")
+
+    }else{
     Cookies.set('logado', JSON.stringify(r))
     navigation.push('/tela-inicial')
     limpar();
+    }
 }
 
 
@@ -48,6 +51,7 @@ function limpar(){
 
     return(
         <Container>
+            <ToastContainer />
             <div className="box-principal">
                 <div className="Voltar"><Link to="/login"> <button>Voltar</button> </Link></div>
                 <div className="titulo">Criar Conta</div>
