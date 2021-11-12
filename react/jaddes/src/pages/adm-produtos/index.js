@@ -3,6 +3,9 @@ import Management from "../../components/comum/adm/produtoManagement";
 import Api from "../../service/apiProdutos";
 import { useEffect, useState } from "react";
 import CabecalhoAdm from "../../components/comum/adm/cabecalho";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const api = new Api();
 
@@ -21,13 +24,13 @@ export default function Produtos() {
 
     async function deletar(id) {
         await api.delete(id);
-        alert('apagou ein')
+        toast('Produto Excluido')
         mostrar();
     }
 
     async function alterar(id, produto, valor, descricao, categoria, img, codigo) {
         await api.change(id, produto, valor, descricao, categoria, img, codigo)
-        alert('alterou??')
+        toast('Produto Alterado ')
         mostrar();
     }
 
@@ -37,7 +40,7 @@ export default function Produtos() {
     return (
         <Container>
             <CabecalhoAdm />
-
+            <ToastContainer />
             <div className="background-informacoes">
                 <div className="Informacoes"> Produtos </div>
                 <div className="box-funcionalidades">

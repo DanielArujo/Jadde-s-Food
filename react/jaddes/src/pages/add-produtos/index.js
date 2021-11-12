@@ -2,7 +2,8 @@ import Container from "./styled";
 import Api from "../../service/apiProdutos";
 import {useState } from "react";
 import CabecalhoAdm from "../../components/comum/adm/cabecalho";
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const api = new Api();
@@ -19,9 +20,14 @@ export default function AddProdutos(){
 
 
     async function inserir(){
-        await api.insert(produto, valor, descricao, categoria, img, codigo);
-        alert('opa foi!')
+        let r = await api.insert(produto, valor, descricao, categoria, img, codigo);
+
+        if(r.erro){
+            toast(r.erro)
+        }else{
+        toast('Produto Inserido!')
         limpar();
+        }
     }
 
     function limpar(){
@@ -35,6 +41,7 @@ export default function AddProdutos(){
 
     return(
         <Container>
+        <ToastContainer />
         <CabecalhoAdm />
         <div className="background-informacoes">
             <div className="Informacoes"> Adicionar Produtos </div>
