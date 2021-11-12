@@ -28,8 +28,7 @@ async function cadastrar(){
     let r = await api.insertUsu(nome, telefone, email, senha, endereco, numeroEndereco, complemento)
 
     if(r.erro){
-        toast("Deu erro ai")
-
+        toast(r.erro)
     }else{
     Cookies.set('logado', JSON.stringify(r))
     navigation.push('/tela-inicial')
