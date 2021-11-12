@@ -22,6 +22,7 @@ export default function Qtd(props){
 
       useEffect(() => {
         props.onChange(qtd);
+        // eslint-disable-next-line
       }, [qtd])
 
     return(
