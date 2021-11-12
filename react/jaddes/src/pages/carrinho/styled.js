@@ -90,20 +90,14 @@ const Container = styled.div`
     flex-direction: column;
 }
 
-.finalization{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 4em;
-
-}
 
 .add{
-    margin-left: 3em;
     padding: 0.5em 1em;
     background-color: #D77272;
     border-radius: 10px;
+    width: 15em;
     border: solid 0.5px #BB3A3A;
+    margin-bottom: 1em;
 }
 
 .add:hover{
@@ -112,10 +106,10 @@ const Container = styled.div`
 
 
 .confirm{
-    margin-left: 2em;
     padding: 0.5em 1em;
     background-color: #B3C694;
     border-radius: 10px;
+    width: 15em;
     border: solid 0.5px #99B66A;
 }
 

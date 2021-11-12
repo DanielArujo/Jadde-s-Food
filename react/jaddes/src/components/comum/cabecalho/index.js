@@ -13,7 +13,6 @@ export default function Cabecalho(){
     
   
    useEffect( () => {Cookies.get('logado')}, [])  
-   console.log(usuarioLogado);
 
     if (usuarioLogado === undefined){
     return(
@@ -45,9 +44,10 @@ export default function Cabecalho(){
                 <img src="../assets/images/img-cliente.svg" alt="" />
             </div>
             <div className="Informacoes">
-                <div > Delivery</div>
                 <Link to="/pedidos">  <Linkinicial> Pedidos </Linkinicial> </Link>
-                <Link to="/sobremesas"> <Linkinicial>  Cardápio </Linkinicial> </Link>
+                <Link to="/lanches"> <Linkinicial>  Lanches </Linkinicial> </Link>
+                <Link to="/sobremesas"> <Linkinicial>  Sobremesas </Linkinicial> </Link>
+                <Link to="/bebidas"> <Linkinicial>  Bebidas </Linkinicial> </Link>
             </div>
             <div className="botoes-cabecalho"> 
                 <Link to='/carrinho'> <button>  <img src="../assets/images/carrinho-img.svg" alt="" /> </button> </Link> 

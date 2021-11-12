@@ -14,7 +14,7 @@ font-weight: 700;
 border: solid 0.3px #e6ba5c;
 }
 
-.preco{
+.info{
     padding: 1em;
 }
 

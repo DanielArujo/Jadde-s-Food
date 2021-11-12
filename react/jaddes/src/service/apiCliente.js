@@ -8,7 +8,7 @@ const api = axios.create({
 export default class Api{
 
     async conferir(){
-        let r = await api.get('/')
+        let r = await api.get('/cliente')
         return r.data
     }
 

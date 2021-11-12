@@ -2,15 +2,20 @@ import Container from "./styled";
 import Qtd from "../quantidade";
 
 
-export default function CarrinhoItem(){
+export default function CarrinhoItem(props){
+
+    function remover() {
+        props.onRemove(props.info.id_produto);
+      }
+
     return(
         <Container>
-             <img src="../assets/images/burgao.svg" alt="" />
+             <img src={props.info.ds_imagem} alt="" />
             <Qtd />
-            <div className="remove">Remover Pedido</div>
+            <div className="remove" onClick={remover}>Remover Pedido</div>
             <div className="pagamento">
                 <div>Preço:</div>
-                <div> R$ 0,00</div> 
+                <div> {props.info.vl_produto}</div> 
             </div>
 
         </Container>

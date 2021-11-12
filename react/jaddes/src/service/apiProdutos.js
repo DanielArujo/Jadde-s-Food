@@ -19,6 +19,11 @@ export default class Api{
         return r.data 
     }
 
+    async salg(){
+        let r = await api.get('/produto/salgados')
+        return r.data 
+    }
+
     async insert(produto, valor, descricao, categoria, img, codigo){
         let r = await api.post('/produto', {produto, valor, descricao, categoria, img, codigo})
         return r.data
