@@ -15,7 +15,7 @@ export default class Api{
     } 
 
     async meat(){
-        let r = await api.get('/produto/categoria-carne')
+        let r = await api.get('/produto/carne')
         return r.data 
     }
 
