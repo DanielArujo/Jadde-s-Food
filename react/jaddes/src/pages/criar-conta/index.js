@@ -4,8 +4,8 @@ import Rodape from "../../components/comum/rodape"
 import { Link } from "react-router-dom"
 import Api  from "../../service/apiCliente"
 import { useState } from "react";
-
-
+import { useHistory } from "react-router";
+import Cookies from "js-cookie";
 
 const api = new Api();
 
@@ -20,10 +20,13 @@ const [ endereco, setEndereco ] = useState('');
 const [ numeroEndereco, setNumeroEndereco ] = useState();
 const [ complemento ] = useState('');
 
+const navigation = useHistory()
 
 
 async function cadastrar(){
-    await api.insertUsu(nome, telefone, email, senha, endereco, numeroEndereco, complemento)
+    let r = await api.insertUsu(nome, telefone, email, senha, endereco, numeroEndereco, complemento)
+    Cookies.set('logado', JSON.stringify(r))
+    navigation.push('/tela-inicial')
     limpar();
 }
 

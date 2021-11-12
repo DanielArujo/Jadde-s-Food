@@ -26,7 +26,7 @@ export default function CardapioSobremesas(){
 
 
         let r3 = await api.bolos(); 
-        setChurros(r3);
+        setBolo(r3);
     }
 
     useEffect( () => {mostrar()}, [])  

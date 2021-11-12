@@ -5,7 +5,7 @@ import { useHistory } from 'react-router'
 
 export default function Produto(props){
 
-    const [ produto, setProduto ] = useState(props.info)
+    const [ produto ] = useState(props.info)
     
     const navigation = useHistory();
 

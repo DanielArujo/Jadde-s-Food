@@ -10,7 +10,10 @@ import { useEffect } from "react";
 export default function Cabecalho(){
     
     const usuarioLogado = Cookies.get('logado');
-    
+
+    const usu = JSON.parse(usuarioLogado)
+
+    console.log(usu.nm_cliente)
   
    useEffect( () => {Cookies.get('logado')}, [])  
 
@@ -22,9 +25,9 @@ export default function Cabecalho(){
                     <div className="second-name-restaurant">Food</div>
                 </div></Link>
                 <div className="Informacoes">
-                    <div > Delivery</div>
-                    <Link to="/pedidos"> <Linkinicial>  Pedidos  </Linkinicial></Link>
-                    <Link to="/sobremesas">  <Linkinicial>  Cardápio </Linkinicial></Link> 
+                    <Link to="/lanches"> <Linkinicial>  Lanches </Linkinicial> </Link>
+                    <Link to="/sobremesas"> <Linkinicial>  Sobremesas </Linkinicial> </Link>
+                    <Link to="/bebidas"> <Linkinicial>  Bebidas </Linkinicial> </Link>
                 </div>
                 <div className="botoes-cabecalho"> 
                 <Link to="/login"><button>Entrar</button> </Link>
@@ -37,14 +40,13 @@ export default function Cabecalho(){
         
             <ContainerLogado>
             <div className="left">
-                <Link to="/"><div className="Titulo"> 
+                <Link to="/tela-inicial"><div className="Titulo"> 
                     <div className="name-restaurant">Jadde's</div>
                     <div className="second-name-restaurant">Food</div>
                 </div></Link>
-                <img src="../assets/images/img-cliente.svg" alt="" />
+                <h3>Bem-Vindo(a) { usu.nm_cliente }  !! </h3>
             </div>
             <div className="Informacoes">
-                <Link to="/pedidos">  <Linkinicial> Pedidos </Linkinicial> </Link>
                 <Link to="/lanches"> <Linkinicial>  Lanches </Linkinicial> </Link>
                 <Link to="/sobremesas"> <Linkinicial>  Sobremesas </Linkinicial> </Link>
                 <Link to="/bebidas"> <Linkinicial>  Bebidas </Linkinicial> </Link>

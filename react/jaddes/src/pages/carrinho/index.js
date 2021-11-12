@@ -4,13 +4,11 @@ import Rodape from "../../components/comum/rodape";
 import Container from "./styled";
 import { useEffect, useState} from 'react';
 import CarrinhoItem from "../../components/comum/carrinho-item";
-//import { Link } from "react-router-dom";
 import Sucesso from "../../components/pedido-feito";
 import { Link } from "react-router-dom";
-import Api from "../../service/apiCliente";
+
 import Cookies from "js-cookie";
 
-const api = new Api();
 
 
 
@@ -42,7 +40,21 @@ export default function Carrinho(){
         
         }
 
+        function alterarPedido(id, qtd) {
+
+            let produtoAlterado = pedidos.filter(item => item.id_produto === id)[0];
+            produtoAlterado.qtd = qtd;
+        
+            Cookies.set('carrinho', JSON.stringify(pedidos));
+         }
+
+
+    
+
+
     useEffect(() => {carregarCarrinho()}, [])
+
+
 
     return(
         <Container>
@@ -57,9 +69,12 @@ export default function Carrinho(){
                         {pedidos.map(item => 
                             <CarrinhoItem key={item.id}
                             info={item}
-                            onRemove={removerPedido} 
+                            onRemove={removerPedido}
+                            onChange={alterarPedido} 
                             />
                             )}
+
+                        
                         
                         <div className="info-pedido-bottom">
                             <div className="usu-info">

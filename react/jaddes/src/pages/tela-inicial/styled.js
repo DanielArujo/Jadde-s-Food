@@ -8,10 +8,10 @@ const Container = styled.div`
 
 
 h1{
-    color: white;
+    color: black;
     text-align: center;
     -webkit-text-stroke-width: 0.1px;
-    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-color: #21211E;
     font-size: 3em;
 }
 
@@ -56,6 +56,7 @@ h1{
     border: none;
     color: white;
     font-size: 18px;
+    margin-top: 2em;
 }
 
 .Bottom-bar button:hover{
@@ -68,29 +69,6 @@ h1{
     padding: 2em 3em;
 }
 
-.Categoria{
-    align-self: flex-end;
-    
-}
-
-.Categoria button{
-    border: none;
-    border-radius: 10px;
-    background-color: #A5340E;
-    color: white;
-    padding: 0.5em 1em;
-    font-size: 17px;
-    box-shadow: 0px 5px 10px #6b6b6b;
-}
-
-.Categoria img{
-    margin-right: 1.5em;
-    cursor: pointer;
-}
-
-.Categoria button:hover{
-    background-color: #802608;
-}
 
 .imagens-f1{
     display: flex;
@@ -98,6 +76,17 @@ h1{
     padding: 1em;
     justify-content: space-around;
     margin: 1em;
+}
+
+.img img{
+    height: 11em;
+    width: auto;
+    margin: 0em 1em;
+}
+
+.carousel-container{
+    height: 20em;
+    width: 100%;
 }
 
 .Faixa-2 {

@@ -9,6 +9,12 @@ const Container = styled.div`
     justify-content: space-between;
     align-items: center;
     padding: 1em 1.5em;
+
+
+    h3{
+    color: white;
+}
+
 .name-restaurant{
     font-size: 24px;
     font-weight: 700;
@@ -46,6 +52,10 @@ const ContainerLogado = styled.div`
     justify-content: space-between;
     align-items: center;
     padding: 1em 1.5em;
+
+h3{
+    color: white;
+}
 
 .left{
     display: flex;

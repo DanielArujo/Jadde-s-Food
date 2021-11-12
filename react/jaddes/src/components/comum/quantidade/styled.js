@@ -13,6 +13,10 @@ const Container = styled.div`
     margin: 0em 2em;
 }
 
+.somar, .subtrair{
+    cursor: pointer;
+}
+
 `
 
 

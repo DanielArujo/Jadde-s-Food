@@ -1,23 +1,34 @@
 import Container from "./styled";
 import Qtd from "../quantidade";
+import { useState } from "react";
 
 
 export default function CarrinhoItem(props){
 
+    const [ pedido, setPedido  ] = useState(props.info)
+
+
+    function alterar(qtd){
+        setPedido({...pedido, qtd} )
+        props.onChange(pedido.id_produto, qtd)
+    }
+
+
     function remover() {
-        props.onRemove(props.info.id_produto);
+        props.onRemove(pedido.id_produto);
       }
 
+
+    
     return(
         <Container>
-             <img src={props.info.ds_imagem} alt="" />
-            <Qtd />
+             <img src={pedido.ds_imagem} alt="" />
+            <Qtd onChange={alterar} value={pedido.qtd } />
             <div className="remove" onClick={remover}>Remover Pedido</div>
             <div className="pagamento">
                 <div>Preço:</div>
-                <div> {props.info.vl_produto}</div> 
+                <div> { pedido.vl_produto * pedido.qtd + ",00"}</div> 
             </div>
-
         </Container>
     )
 }

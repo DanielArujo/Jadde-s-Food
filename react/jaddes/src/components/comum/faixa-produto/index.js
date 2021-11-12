@@ -1,10 +1,10 @@
 
-import Carousel from 'react-multi-carousel';
+
 
 import Container from "./styled"
 import Produto from "../produto-individual"
 
-
+import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
 

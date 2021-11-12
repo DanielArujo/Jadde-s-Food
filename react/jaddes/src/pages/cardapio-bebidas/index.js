@@ -45,7 +45,7 @@ export default function CardapioSobremesas(){
             <div className="box-principal">
                 
                 <div className="imagem"> 
-                    <div className="categoria"> Sobremesas </div>
+                    <div className="categoria"> Bebidas </div>
                 </div>
                 
                     <div className="cardapio-inicio">
