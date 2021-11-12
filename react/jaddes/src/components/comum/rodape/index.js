@@ -1,13 +1,14 @@
+import { Link } from "react-router-dom"
 import Container from "./styled"
 
 export default function Rodape(){
     return(
             <Container>
                 
-                    <div className="box-name-rodape">
+                    <Link to ={'/home'}><div className="box-name-rodape" >
                         <div className="name-restaurant-rodape">Jadde's</div>
                         <div className="second-name-restaurant-rodape">Food</div>
-                    </div>
+                    </div></Link>
                     <div className="box-rodape-informations">
                         <div className="text-redes-sociais">
                             <div>Nos siga em nossas redes sociais, e fique atento para novas ofertas</div>
