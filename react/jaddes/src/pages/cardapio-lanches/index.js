@@ -27,10 +27,10 @@ export default function CardapioSobremesas(){
         setSalgados(r2)
 
         let r3 = await api.past();
-        setSalgados(r3)
+        setPastel(r3)
 
         let r4 = await api.pizza();
-        setSalgados(r4)
+        setPizza(r4)
 
     }
 
@@ -54,8 +54,8 @@ export default function CardapioSobremesas(){
                     <div className="Faixa-cardapio">
                         <Faixa produtos={carne} titulo="Hamburguer" />
                         <Faixa produtos={salgados} titulo="Salgados" />
-                        <Faixa produtos={salgados} titulo="Salgados" />
-                        <Faixa produtos={salgados} titulo="Salgados" />
+                        <Faixa produtos={pastel} titulo="Pasteis" />
+                        <Faixa produtos={pizza} titulo="Pizzas" />
                     </div>
             </div>
 

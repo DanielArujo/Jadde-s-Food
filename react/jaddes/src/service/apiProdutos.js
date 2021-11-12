@@ -8,12 +8,14 @@ const api = axios.create({
 export default class Api{
 
 
-    // Produtos
+    
     async show(){
         let r = await api.get('/produto')
         return r.data
     } 
 
+
+    // Produtos Lanches
     async meat(){
         let r = await api.get('/produto/carne')
         return r.data 
@@ -34,6 +36,36 @@ export default class Api{
         return r.data 
     }
 
+    // Produtos Bebidas
+
+    async bebidas(){
+        let r = await api.get('/produto/bebidas')
+        return r.data 
+    }
+
+    async cerveja(){
+        let r = await api.get('/produto/cervejas')
+        return r.data 
+    }
+
+    async bebidasQuentes(){
+        let r = await api.get('/produto/bebida-quente')
+        return r.data 
+    }
+
+    async suco(){
+        let r = await api.get('/produto/sucos   ')
+        return r.data 
+    }
+
+    async refri(){
+        let r = await api.get('/produto/refri')
+        return r.data 
+    }
+
+
+
+    // Produtos Sobremesas
 
 
     async insert(produto, valor, descricao, categoria, img, codigo){

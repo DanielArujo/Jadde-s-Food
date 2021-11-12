@@ -12,16 +12,28 @@ const api = new Api();
 
 export default function CardapioSobremesas(){
 
-    const [ sorvete, setSorvete] = useState([])
-    const [ bolo, setBolo] = useState([])
-
+    const [ bebida, setBebidas] = useState([])
+    const [ cerveja, setCerveja] = useState([])
+    const [ bebidaQuente, setBebidaQuente] = useState([])
+    const [ sucos, setSucos] = useState([])
+    const [ refri, setRefri] = useState([])
 
     async function mostrar(){
-        let r = await api.meat(); // api do Sorvete
-        setSorvete(r);
+        let r = await api.bebidas(); // api do Sorvete
+        setBebidas(r);
 
-        let r2 = await api.meat(); // api do bolo
-        setBolo(r2);
+        let r = await api.cerveja(); // api do Sorvete
+        setCerveja(r);
+
+        let r = await api.bebidasQuentes(); // api do Sorvete
+        setBebidaQuente(r);
+
+        let r = await api.suco(); // api do Sorvete
+        setSucos(r);
+
+        let r = await api.refri(); // api do Sorvete
+        setRefri(r);
+
     }
 
     useEffect( () => {mostrar()}, [])  
@@ -42,8 +54,11 @@ export default function CardapioSobremesas(){
                         
                     </div>
                     <div className="Faixa-cardapio">
-                        <Faixa produtos={sorvete} titulo="Sorvete" />
-                        <Faixa produtos={bolo} titulo="Bolos" />
+                        <Faixa produtos={bebida} titulo="Bebidas" />
+                        <Faixa produtos={cerveja} titulo="Cervejas" />
+                        <Faixa produtos={bebidaQuente} titulo="Bebidas Quentes" />
+                        <Faixa produtos={sucos} titulo="Sucos" />
+                        <Faixa produtos={refri} titulo="Refrigerantes" />
                     </div>
             </div>
 
