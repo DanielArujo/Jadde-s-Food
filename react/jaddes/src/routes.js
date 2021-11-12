@@ -18,12 +18,12 @@ import Pedidos from './pages/pedidos'
 import Carrinho from './pages/carrinho'
 //import Aprovar from './pages/aprovar-compra'
 
-
+    
 export default function Routes() {
     return (
         <BrowserRouter>
             <Switch>
-                <Route path="/" exact={true} component={Home} />
+                <Route path="/" exact={true} component={TelaInicial} />
                 <Route path="/add" exact={true} component={AddProdutos} />
                 <Route path="/produtos" exact={true} component={Produtos} />
                 <Route path="/tela-inicial" exact={true} component={TelaInicial} />
@@ -36,6 +36,7 @@ export default function Routes() {
                 <Route path="/carrinho" exact={true} component={Carrinho} />
                 <Route path="/pedidos" exact={true} component={Pedidos} />
                 <Route path="/carrinho" exact={true} component={Carrinho} />
+                <Route path="/home" exact={true} component={Home}/>
                 
             </Switch>
         </BrowserRouter> 
