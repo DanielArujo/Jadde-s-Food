@@ -16,11 +16,17 @@ export default function Carrinho(){
 
     const [pedidos, setPedidos] = useState([])
     const [mostrarConfirmado, setMostrarConfirmado] = useState(false); 
+
+
     
+
+
+
     let cliente = Cookies.get('logado');
     cliente = cliente !== undefined     ? JSON.parse(cliente)
                                         : []
- 
+    
+    
 
     function carregarCarrinho() {
 
@@ -31,6 +37,8 @@ export default function Carrinho(){
     
         setPedidos(carrinho);
         }                                    
+
+
 
         function removerPedido(id) {
             
@@ -52,7 +60,7 @@ export default function Carrinho(){
     
 
 
-    useEffect(() => {carregarCarrinho()}, [])
+    useEffect(carregarCarrinho, [])
 
 
 
@@ -67,7 +75,7 @@ export default function Carrinho(){
                 <div className="box-pedido-carrinho"> 
                     <div className="info-pedido">
                         {pedidos.map(item => 
-                            <CarrinhoItem key={item.id}
+                            <CarrinhoItem key={item.id_produto}
                             info={item}
                             onRemove={removerPedido}
                             onChange={alterarPedido} 
@@ -92,7 +100,7 @@ export default function Carrinho(){
                     </div>
                 </div>
             </div>
-            <Sucesso confirmado={mostrarConfirmado} />;
+            <Sucesso confirmado={mostrarConfirmado}/>;
             <Rodape />
         </Container>
     )

@@ -18,6 +18,7 @@ export default function CarrinhoItem(props){
         props.onRemove(pedido.id_produto);
       }
 
+    console.log(pedido.id_produto)
 
     
     return(
