@@ -24,6 +24,18 @@ export default class Api{
         return r.data 
     }
 
+    async past(){
+        let r = await api.get('/produto/pasteis')
+        return r.data 
+    }
+
+    async pizza(){
+        let r = await api.get('/produto/pizzas')
+        return r.data 
+    }
+
+
+
     async insert(produto, valor, descricao, categoria, img, codigo){
         let r = await api.post('/produto', {produto, valor, descricao, categoria, img, codigo})
         return r.data

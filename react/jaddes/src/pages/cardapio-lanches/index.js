@@ -14,6 +14,8 @@ export default function CardapioSobremesas(){
 
     const [ carne, setCarne] = useState([])
     const [ salgados, setSalgados] = useState([])
+    const [ pastel, setPastel] = useState([])
+    const [ pizza, setPizza] = useState([])
 
 
 
@@ -23,6 +25,12 @@ export default function CardapioSobremesas(){
 
         let r2 = await api.salg();
         setSalgados(r2)
+
+        let r3 = await api.past();
+        setSalgados(r3)
+
+        let r4 = await api.pizza();
+        setSalgados(r4)
 
     }
 
@@ -45,6 +53,8 @@ export default function CardapioSobremesas(){
                     </div>
                     <div className="Faixa-cardapio">
                         <Faixa produtos={carne} titulo="Hamburguer" />
+                        <Faixa produtos={salgados} titulo="Salgados" />
+                        <Faixa produtos={salgados} titulo="Salgados" />
                         <Faixa produtos={salgados} titulo="Salgados" />
                     </div>
             </div>
