@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import Container from "./styled";
 
 
@@ -39,6 +40,33 @@ export default function Management(props) {
     return (
         <Container>
             <div className="top-info">
+                
+                {isChange === false ? 
+                    <div>
+                    <div className="img"> <img src={props.info.ds_imagem} alt="" /> </div>
+                    <div><b>Nome: </b>{props.info.nm_produto}  </div>
+                    <div><b>Codigo: </b>{props.info.nr_codigo}</div>
+                    <div><b>Preço: </b>{props.info.vl_produto}  </div>
+                    <div><b>Categoria: </b>{props.info.ds_categoria}  </div>
+                    </div>
+                :
+                    <div>
+                        <input placeholder={props.info.ds_imagem}
+                        type="text" value={img} onChange={e => setImg(e.target.value)} />
+
+                        <input placeholder={props.info.nm_produto}
+                        type="text" value={produto} onChange={e => setProduto(e.target.value)} />
+                    
+                        <input placeholder={props.info.nr_codigo}
+                        type="text" value={codigo} onChange={e => setCodigo(e.target.value)} />
+
+
+                        <input placeholder={props.info.vl_produto}
+                        type="text" value={valor} onChange={e => setValor(e.target.value)} />
+                    </div>
+                    
+                }
+                
                 {isChange === false ? <div className="img"> <img src={props.info.ds_imagem} alt="" /> </div> : <input placeholder={props.info.ds_imagem}
                     type="text" value={img} onChange={e => setImg(e.target.value)} />}
                 <div className="produto-info">
