@@ -25,6 +25,10 @@ const navigation = useHistory()
 
 async function cadastrar(){
     let r = await api.insertUsu(nome, telefone, email, senha, endereco, numeroEndereco, complemento)
+
+    if(r.erro){
+        alert("Deu erro ai")
+    }
     Cookies.set('logado', JSON.stringify(r))
     navigation.push('/tela-inicial')
     limpar();
