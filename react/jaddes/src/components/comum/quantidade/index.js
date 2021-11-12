@@ -6,7 +6,7 @@ import Container from "./styled";
 export default function Qtd(props){
 
     const [ qtd, setQtd ] = useState(props.value);
-
+    
 
     function somar() {
         if (qtd >= 10)

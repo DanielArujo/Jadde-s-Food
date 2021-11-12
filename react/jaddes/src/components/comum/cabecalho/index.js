@@ -3,21 +3,30 @@ import Linkinicial from "../../styled/link-ini"
 import { Link } from "react-router-dom"
 import Cookies  from "js-cookie"
 import { useEffect } from "react";
+import { useHistory } from "react-router";
 
+function lerUsuarioLogado(navigation){
+    let logado = Cookies.get('logado')
 
+    if(!logado){
+        return false
+    }
 
+    let usuarioLogado = JSON.parse(logado);
+    return usuarioLogado
+}
 
 export default function Cabecalho(){
     
-    const usuarioLogado = Cookies.get('logado');
+    
+    const navigation = useHistory()
+    const usuarioLogado = lerUsuarioLogado(navigation)
+    
+    console.log(usuarioLogado)
 
-    const usu = JSON.parse(usuarioLogado)
-
-    console.log(usu.nm_cliente)
-  
    useEffect( () => {Cookies.get('logado')}, [])  
 
-    if (usuarioLogado === undefined){
+    if (usuarioLogado === false){
     return(
         <Container>
                 <Link to="/"><div className="Titulo"> 
@@ -44,7 +53,7 @@ export default function Cabecalho(){
                     <div className="name-restaurant">Jadde's</div>
                     <div className="second-name-restaurant">Food</div>
                 </div></Link>
-                <h3>Bem-Vindo(a) { usu.nm_cliente }  !! </h3>
+                <h3>Bem-Vindo(a)   {usuarioLogado.nm_cliente} !!</h3>
             </div>
             <div className="Informacoes">
                 <Link to="/lanches"> <Linkinicial>  Lanches </Linkinicial> </Link>
