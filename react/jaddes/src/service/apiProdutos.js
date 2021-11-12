@@ -64,8 +64,23 @@ export default class Api{
     }
 
 
-
     // Produtos Sobremesas
+
+    async sorvete(){
+        let r = await api.get('/produto/sorvete')
+        return r.data 
+    }
+
+    async churros(){
+        let r = await api.get('/produto/churros')
+        return r.data 
+    }
+
+    async bolos(){
+        let r = await api.get('/produto/bolos')
+        return r.data 
+    }
+
 
 
     async insert(produto, valor, descricao, categoria, img, codigo){

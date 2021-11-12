@@ -19,20 +19,20 @@ export default function CardapioSobremesas(){
     const [ refri, setRefri] = useState([])
 
     async function mostrar(){
-        let r = await api.bebidas(); // api do Sorvete
+        let r = await api.bebidas(); 
         setBebidas(r);
 
-        let r = await api.cerveja(); // api do Sorvete
-        setCerveja(r);
+        let r2 = await api.cerveja(); 
+        setCerveja(r2);
 
-        let r = await api.bebidasQuentes(); // api do Sorvete
-        setBebidaQuente(r);
+        let r3 = await api.bebidasQuentes(); 
+        setBebidaQuente(r3);
 
-        let r = await api.suco(); // api do Sorvete
-        setSucos(r);
+        let r4 = await api.suco();
+        setSucos(r4);
 
-        let r = await api.refri(); // api do Sorvete
-        setRefri(r);
+        let r5 = await api.refri();
+        setRefri(r5);
 
     }
 
