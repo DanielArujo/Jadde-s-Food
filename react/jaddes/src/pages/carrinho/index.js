@@ -8,8 +8,9 @@ import Sucesso from "../../components/pedido-feito";
 import { Link } from "react-router-dom";
 import RedButton from "../../components/styled/red-button";
 import Cookies from "js-cookie";
+import Api from "../../service/apiPedido";
 
-
+const api = new Api()
 
 
 export default function Carrinho(){
@@ -26,7 +27,8 @@ export default function Carrinho(){
     cliente = cliente !== undefined     ? JSON.parse(cliente)
                                         : []
     
-    
+
+
 
     function carregarCarrinho() {
 
@@ -54,6 +56,14 @@ export default function Carrinho(){
             produtoAlterado.qtd = qtd;
         
             Cookies.set('carrinho', JSON.stringify(pedidos));
+         }
+
+         async function conclusao(){
+
+            const formaPagamento = "dinheiro"
+            const status = "Aguardando"
+
+             let r = await api.insertPedido( formaPagamento, status, pedidos, cliente.id_cliente)
          }
 
     
@@ -110,7 +120,8 @@ export default function Carrinho(){
                         </div>
                     </div>
                 </div>
-                <Sucesso confirmado={mostrarConfirmado}/>;
+                <Sucesso confirmado={mostrarConfirmado}
+                        concluir={conclusao} />;
                 <Rodape />
             </Container>
         )

@@ -10,7 +10,7 @@ export default function Sucesso(props){
             <div className="conteudo">
                 <img src="../assets/images/sucesso.png" alt="" />
                 <h1> Seu pedido foi concluindo com sucesso!! </h1>
-                <Link to={"/tela-inicial"}>  <RedButton> Voltar à Tela Inicial </RedButton> </Link>
+                <Link to={"/tela-inicial"}>  <RedButton onClick={props.concluir}> Voltar à Tela Inicial </RedButton> </Link>
             </div>
         </Container>
     )

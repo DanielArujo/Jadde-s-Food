@@ -8,6 +8,7 @@ export default function AprovarItem(){
             <div><b>Nome: </b>  Daniell </div>
             <div><b>Itens: </b> </div>
             <div><b>Valor:</b> </div>
+            <div> <b>Forma de Pagamento: </b></div>
             <div> <b>Endereço: </b></div>
 
             <div className="buttons"> 
