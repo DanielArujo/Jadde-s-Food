@@ -1,8 +1,35 @@
 
 import Container from "./styled";
 import AprovarItem from "../../components/comum/aprovar-item";
+import Api from "../../service/apiPedido";
+import { useEffect, useState } from "react";
+
+const api = new Api()
+
+
 
 export default function Aprovar(){
+
+    const [ pedido, setPedido] = useState([])
+
+
+    async function mostrar(){
+        let r = await api.conferirPedido();
+        setPedido(r)
+    }
+
+
+    function removerPedido(id) {
+            
+        let p = pedido.filter(item => item.id_cliente !== id);
+        setPedido([...p]);
+        }
+
+    console.log(pedido)
+
+    useEffect( () => {mostrar()}, [])  
+
+
     return(
         <Container>
             <div className="Barra">
@@ -18,11 +45,13 @@ export default function Aprovar(){
                 <div className="Informacoes"> Aprovar Produtos </div>
                 <div className="box-funcionalidades">
                     <div className="box-aprovar">
-                
-                        <AprovarItem />
-                        <AprovarItem />
-                        <AprovarItem />
-                        <AprovarItem />
+                    {pedido.map(item => 
+                          <AprovarItem key={item.id_cliente}
+                              info={item}
+                              onDelete={removerPedido}
+                          />
+                      )}
+        
                     
                     </div>  
                 </div>

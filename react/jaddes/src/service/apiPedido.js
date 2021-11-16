@@ -17,4 +17,11 @@ export default class Api{
         return r.data
     }
 
+
+    async recusarPedido(id){
+        let r = await api.delete('pedido/' + id)
+        return r.data
+    }
+
+
 }

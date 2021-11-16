@@ -1,32 +1,31 @@
 import Container from "./styled"
 import Api from "../../../service/apiPedido";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const api = new Api()
 
-export default function AprovarItem(){
+export default function AprovarItem(props){
 
-    const {pedido, setPedido} = useState([])
+    const [cliente, setCliente] = useState(props.info)
 
-    async function mostrar(){
-        let r = await api.conferirPedido();
-        setPedido(r)
-    }
+    async function remover(id) {
+        let r = await api.recusarPedido(id)
+      }
 
-    console.log(pedido)
+
 
     return(
         <Container>
 
-            <div><b>Nome: </b>  Daniell </div>
-            <div><b>Itens: </b> </div>
-            <div><b>Valor:</b> </div>
-            <div> <b>Forma de Pagamento: </b></div>
-            <div> <b>Endereço: </b></div>
+            <div><b>Nome: </b> {cliente.nm_cliente} </div>
+            <div><b>Itens: </b>  </div>
+            <div><b>Valor:</b>  </div>
+            <div> <b>Forma de Pagamento:</b> {cliente.infoc_jdf_pedidos[0].ds_formaPagamento} </div>
+            <div> <b>Endereço:</b> {cliente.ds_endereco} </div>
 
             <div className="buttons"> 
-                <button className="Recusar"> Recusar </button>
-                <button className="Aprovar" onClick={mostrar()} > Aprovar</button>
+                <button className="Recusar" onClick={remover(cliente.id_cliente)}> Recusar </button>
+                <button className="Aprovar"> Aprovar</button>   
             </div>
         </Container>
     )
