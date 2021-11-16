@@ -7,7 +7,7 @@ const Container = styled.div`
 
     margin: 1em;
     height: auto;
-    width: 30em;
+    width: 33em;
     padding: 0.5em 1em;
 
     background-color: #FFFFFF;
@@ -17,7 +17,7 @@ const Container = styled.div`
 input{
     width: 100%;
     outline: none;
-    border-radius: 10px;
+    border-radius: 7px;
     padding: 0.3em 1em;
     border: solid 1px gray;
     align-self: center;
@@ -49,6 +49,7 @@ b{
 .produto-info > div{
     margin: 0.5em 0em;
 }
+
 
 .img img{
     height: 7em;

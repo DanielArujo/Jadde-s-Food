@@ -22,7 +22,6 @@ export default function Cabecalho(){
     const navigation = useHistory()
     const usuarioLogado = lerUsuarioLogado(navigation)
     
-    console.log(usuarioLogado)
 
    useEffect( () => {Cookies.get('logado')}, [])  
 

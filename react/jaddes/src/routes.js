@@ -16,7 +16,7 @@ import Login from './pages/entrar-conta'
 import Forgot from './pages/esqueci-senha'
 import Pedidos from './pages/pedidos'
 import Carrinho from './pages/carrinho'
-//import Aprovar from './pages/aprovar-compra'
+import Aprovar from './pages/aprovar-compra'
 
     
 export default function Routes() {
@@ -26,6 +26,7 @@ export default function Routes() {
                 <Route path="/" exact={true} component={TelaInicial} />
                 <Route path="/add" exact={true} component={AddProdutos} />
                 <Route path="/produtos" exact={true} component={Produtos} />
+                <Route path="/aprovar" exact={true} component={Aprovar} />
                 <Route path="/tela-inicial" exact={true} component={TelaInicial} />
                 <Route path="/lanches" exact={true} component={CardapioLanches} />
                 <Route path="/sobremesas" exact={true} component={CardapioSobremesas} />

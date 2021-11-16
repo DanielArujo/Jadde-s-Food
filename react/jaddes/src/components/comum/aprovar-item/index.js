@@ -1,21 +1,18 @@
-import Container from "./styled";
+import Container from "./styled"
 
 
 export default function AprovarItem(){
     return(
         <Container>
-            <button> X </button>
-            <div className="aprovar">
-                <div className="img-cliente">
-                    <img src="../assets/images/img-cliente.svg" alt="" />
-                    
-                </div>
-                <div className="aprovar-info">
-                    <div className="text-info">Nome:</div>
-                    <div className="text-info">Itens:</div>
-                    <div className="text-info">Valor:</div>
-                    <div className="text-info">Endereço:</div>
-                </div>
+
+            <div><b>Nome: </b>  Daniell </div>
+            <div><b>Itens: </b> </div>
+            <div><b>Valor:</b> </div>
+            <div> <b>Endereço: </b></div>
+
+            <div className="buttons"> 
+                <button className="Recusar"> Recusar </button>
+                <button className="Aprovar"> Aprovar</button>
             </div>
         </Container>
     )

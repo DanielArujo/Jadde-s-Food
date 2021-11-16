@@ -18,15 +18,12 @@ export default function Aprovar(){
                 <div className="Informacoes"> Aprovar Produtos </div>
                 <div className="box-funcionalidades">
                     <div className="box-aprovar">
-                        <div className="aprovar-esquerda">
+                
                         <AprovarItem />
                         <AprovarItem />
-                        </div>
-                        
-                        <div className="aprovar-direita">
                         <AprovarItem />
                         <AprovarItem />
-                        </div>  
+                    
                     </div>  
                 </div>
             </div>

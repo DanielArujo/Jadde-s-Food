@@ -10,6 +10,13 @@ export default function Produto(props){
     const navigation = useHistory();
 
     function comprar(){
+        
+        let cliente = Cookies.get('logado')
+
+        if (cliente === undefined) {
+            return navigation.push('/carrinho')
+        }
+
         let carrinho = Cookies.get('carrinho');
         carrinho = carrinho !== undefined 
                 ? JSON.parse(carrinho) 

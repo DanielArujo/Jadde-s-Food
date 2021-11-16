@@ -37,7 +37,7 @@ const Container = styled.div`
 }
 
 .Informacoes{
-    margin: 0em 0em 1em 5em;
+    margin-bottom: 1em;
     color: white;
     font-size: 28px;
 }
@@ -46,78 +46,31 @@ const Container = styled.div`
     display: flex;
     flex-direction: column;
 
-    height: 80vh;
-    padding: 3em;
+    height: 90vh;
+    padding: 1em 3em;
     background-color: #CBA28C;
 }
 
-.box-funcionalidades{
-    display: flex;
-    justify-content: center;
-}
-
-
 .box-aprovar{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: row;    
+    flex-wrap: wrap;
+
     padding: 2em;
-    min-width: 70vw;
-    position: relative;
+    height: 70vh;
+    width: 90vw;
+
     background-color: #F3EAD7;
     border-radius: 10px;
+    align-items: center;
+    overflow-y: auto;
 }
 
-.aprovar{
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 1em;
-
-    background-color: white;
-    border-bottom: solid #bebebe;
-    padding: 1em 1.5em;
-    width: 20em;
-    border-radius: 10px;
-}
-
-.img-cliente{
-    margin-right: 1em;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    border-radius: 45%;
-    border: none;
-}
-
-.text-info{
-    margin-bottom: 0.3em;
-}
-
-.aprovar-esquerda button{
-    justify-content: flex-start;
-    border:  solid gray;
-    background-color: white;
-    position: absolute;
-    
-    width: 30px;
-    height: 30px;
-}
-
-.aprovar-direita button{
-
-    justify-content: flex-start;
-    border:  solid gray;
-    background-color: white;
-    position: absolute;
-    
-    width: 30px;
-    height: 30px;
-}
 
 .Faixa{
     display: flex;
     background-color: #78290F;
-    height: 15vh;    
+    height: 10vh;    
 }
 
 

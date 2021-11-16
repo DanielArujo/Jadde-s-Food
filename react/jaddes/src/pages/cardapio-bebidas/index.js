@@ -54,11 +54,10 @@ export default function CardapioSobremesas(){
                         
                     </div>
                     <div className="Faixa-cardapio">
-                        <Faixa produtos={bebida} titulo="Bebidas" />
+                        <Faixa produtos={refri} titulo="Refrigerantes" />
                         <Faixa produtos={cerveja} titulo="Cervejas" />
                         <Faixa produtos={bebidaQuente} titulo="Bebidas Quentes" />
-                        <Faixa produtos={sucos} titulo="Sucos" />
-                        <Faixa produtos={refri} titulo="Refrigerantes" />
+                        <Faixa produtos={sucos} titulo="Sucos" />               
                     </div>
             </div>
 

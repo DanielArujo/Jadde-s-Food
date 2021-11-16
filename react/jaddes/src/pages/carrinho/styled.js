@@ -119,4 +119,73 @@ const Container = styled.div`
 
 `
 
-export default Container
+const ContainerDeslog = styled.div`
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+.box-carrinho{
+    display: flex;
+    flex-direction: column;
+    background-color: #F3EAD7;
+    padding: 3em;
+    
+}
+
+
+.box-inicio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+
+.titulo-carrinho{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.voltar-carrinho button{
+    color: white;
+    background-color: #78290F;
+    border: none;
+    border-radius: 10px;
+    padding: 0.5em 2em;
+}
+
+.voltar-carrinho button:hover{
+    background-color: #6B220A;
+}
+
+.text-carrinho{
+    margin: 0em 1em 0.5em 0em;
+    font-weight: 700;
+}
+
+.box-pedido-carrinho{
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 65vh;
+
+    background-color: white;
+    border-radius: 10px;
+    padding: 2em 3em;
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.box-pedido-carrinho h1{
+    width: 20em;
+}
+
+
+
+
+`
+
+export {Container, ContainerDeslog} 

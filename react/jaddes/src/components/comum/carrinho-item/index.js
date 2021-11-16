@@ -10,7 +10,7 @@ export default function CarrinhoItem(props){
 
     function alterar(qtd){
         setPedido({...pedido, qtd} )
-        props.onChange(pedido.id_produto, qtd)
+        props.onChange(pedido.id_produto, qtd)  
     }
 
 
@@ -18,7 +18,6 @@ export default function CarrinhoItem(props){
         props.onRemove(pedido.id_produto);
       }
 
-    console.log(pedido.id_produto)
 
     
     return(

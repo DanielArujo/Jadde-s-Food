@@ -21,6 +21,11 @@ export default class Api{
         let r = await api.post('/cliente/login', {email, senha})
         return r.data
     }
+
+    async alterar(id, telefone, endereco, numeroEndereco){
+        let r = await api.put('/cliente/' + id, {telefone, endereco, numeroEndereco})
+         return r.data
+    }
 }
 
 

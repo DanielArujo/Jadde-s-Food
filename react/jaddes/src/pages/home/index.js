@@ -8,6 +8,7 @@ export default function Home(){
         <Container>
             <div className='link'> <Link to= '/produtos' > <button> Manutenção Produtos </button></Link></div>
             <div className='link'> <Link to='./add'> <button>  Adicionar Produtos</button> </Link></div>
+            <div className='link'> <Link to='./aprovar'> <button>  Aprovar Pedidos</button> </Link></div>
             <div className='link'> <Link to='/login'> <button> Entrar-cliente </button> </Link> </div>
             <div className='link'> <Link to='/create'> <button> Criar Conta </button> </Link> </div>
             <div className='link'> <Link to='/esqueci'> <button> Esqueceu Senha </button> </Link> </div>
