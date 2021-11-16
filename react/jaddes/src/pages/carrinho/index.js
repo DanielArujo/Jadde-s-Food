@@ -17,7 +17,7 @@ export default function Carrinho(){
 
     const [pedidos, setPedidos] = useState([])
     const [mostrarConfirmado, setMostrarConfirmado] = useState(false); 
-    const [isChange, setIsChange] = useState(true)
+    const [isChange, setIsChange] = useState(false)
 
     
     const logado = Cookies.get('logado');
