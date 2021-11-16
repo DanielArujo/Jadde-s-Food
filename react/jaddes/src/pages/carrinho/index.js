@@ -63,11 +63,11 @@ export default function Carrinho(){
             const formaPagamento = "dinheiro"
             const status = "Aguardando"
 
-             let r = await api.insertPedido( formaPagamento, status, pedidos, cliente.id_cliente)
+             let r = await api.insertPedido( formaPagamento, status, pedidos.map(item => item.id_produto), cliente.id_cliente)
          }
 
     
-        console.log(pedidos)
+        console.log(pedidos.map(item => item.id_produto))
 
     useEffect(carregarCarrinho, [])
 
