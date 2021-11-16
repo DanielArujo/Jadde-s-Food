@@ -7,8 +7,14 @@ const api = axios.create({
 
 export default class Api{
     async insertPedido(formaPagamento, status, produtos , idcliente){
-        let r = await api.post('/pedido', {formaPagamento, status, produtos , idcliente});
+        let r = await api.post('/pedido/v2', {formaPagamento, status, produtos , idcliente});
         return(r.data)
+    }
+
+
+    async conferirPedido(){
+        let r = await api.get('pedido/cliente')
+        return r.data
     }
 
 }
