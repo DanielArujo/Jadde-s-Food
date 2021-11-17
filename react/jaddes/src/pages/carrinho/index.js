@@ -18,7 +18,7 @@ export default function Carrinho(){
     const [pedidos, setPedidos] = useState([])
     const [mostrarConfirmado, setMostrarConfirmado] = useState(false); 
     const [isChange, setIsChange] = useState(false)
-
+    
     
     const logado = Cookies.get('logado');
 
@@ -66,8 +66,19 @@ export default function Carrinho(){
              let r = await api.insertPedido( formaPagamento, status, pedidos.map(item => item.id_produto), cliente.id_cliente)
          }
 
-    
-        console.log(pedidos.map(item => item.id_produto))
+
+         function alterar(){
+             if(isChange === false){
+                setIsChange(true)
+             }
+         }
+
+         function confirmar(){
+             if(isChange === true){
+                setIsChange(false)
+             }
+         }
+         console.log(isChange)
 
     useEffect(carregarCarrinho, [])
 
@@ -99,15 +110,15 @@ export default function Carrinho(){
                                     <div className="text-carrinho">Endereço: { cliente.ds_endereco} </div>
                                     <div className="text-carrinho">Numero da Residência: { cliente.nr_endereco } </div>
                                     <div className="text-carrinho">Telefone: { cliente.nr_telefone } </div>
-                                    <button className="button-padrao">Alterar Informaçoes </button>    
+                                    <button className="button-padrao" onClick={alterar}>Alterar Informaçoes </button>    
                                 </div>
                                 :
                                 <div className="usu-info">
-                                Endereço:<input className="text-carrinho"/>
-                                <div className="text-carrinho">Numero da Residência: { cliente.nr_endereco } </div>
-                                <div className="text-carrinho">Telefone: { cliente.nr_telefone } </div>
-                                <button className="button-padrao">Alterar Informaçoes </button>    
-                            </div>
+                                <div className="text-carrinho">Endereço:<input /></div>
+                                <div className="text-carrinho">Numero da Residência:<input /></div>
+                                <div className="text-carrinho">Telefone:<input /></div>
+                                <button className="button-padrao" onClick={confirmar}>Alterar Informaçoes </button> 
+                            </div>  
                                 }
                                 
                                 <div className="payment">

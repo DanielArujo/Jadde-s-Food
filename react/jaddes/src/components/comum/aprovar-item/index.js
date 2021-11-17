@@ -24,7 +24,7 @@ export default function AprovarItem(props){
             <div> <b>Endereço:</b> {cliente.ds_endereco} </div>
 
             <div className="buttons"> 
-                <button className="Recusar" onClick={remover(cliente.id_cliente)}> Recusar </button>
+                <button className="Recusar" onClick={ () => remover(cliente.id_cliente)}> Recusar </button>
                 <button className="Aprovar"> Aprovar</button>   
             </div>
         </Container>

@@ -44,6 +44,17 @@ const Container = styled.div`
     font-weight: 700;
 }
 
+
+.text-carrinho input{
+    outline: none;
+    margin-left: 1em;
+    padding: 0.2em 1em;
+    border-radius: 7px;
+    border: solid 1px gray;
+    cursor: text;
+}
+
+
 .box-pedido-carrinho{
     width: 100;
     background-color: white;
@@ -162,6 +173,7 @@ const ContainerDeslog = styled.div`
     margin: 0em 1em 0.5em 0em;
     font-weight: 700;
 }
+
 
 .box-pedido-carrinho{
     display: flex;
