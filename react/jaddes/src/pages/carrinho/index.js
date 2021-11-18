@@ -8,24 +8,36 @@ import Sucesso from "../../components/pedido-feito";
 import { Link } from "react-router-dom";
 import RedButton from "../../components/styled/red-button";
 import Cookies from "js-cookie";
-import Api from "../../service/apiPedido";
+import ApiPedido from "../../service/apiPedido";
+import Api from "../../service/apiCliente";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
-const api = new Api()
+
+
+const api = new ApiPedido();
+const apiCliente = new Api();
+
 
 
 export default function Carrinho(){
-
-    const [pedidos, setPedidos] = useState([])
-    const [mostrarConfirmado, setMostrarConfirmado] = useState(false); 
-    const [isChange, setIsChange] = useState(false)
-    
-    
     const logado = Cookies.get('logado');
 
 
     let cliente = Cookies.get('logado');
     cliente = cliente !== undefined     ? JSON.parse(cliente)
                                         : []
+
+                                        
+
+    const [pedidos, setPedidos] = useState([])
+    const [mostrarConfirmado, setMostrarConfirmado] = useState(false); 
+    const [isChange, setIsChange] = useState(false);
+    const [ endereco, setEndereco] = useState(cliente.ds_endereco);
+    const [ numero, setNumero] = useState(cliente.nr_endereco);  
+    const [ telefone, setTelefone] = useState(cliente.nr_telefone);
+    
+    
     
 
 
@@ -73,19 +85,23 @@ export default function Carrinho(){
              }
          }
 
-         function confirmar(){
+         async function confirmar(){
              if(isChange === true){
+                let r = await apiCliente.alterar(cliente.id_cliente, telefone, endereco, numero)
+                toast('Informaçoes Alteradas')
                 setIsChange(false)
              }
          }
-         console.log(isChange)
+         console.log(cliente.nr_endereco)
 
     useEffect(carregarCarrinho, [])
+
 
     if(logado !== undefined){
         return(
             <Container>
                 <Cabecalho />
+                <ToastContainer />
                 <div className="box-carrinho"> 
                     <div className="box-inicio"> 
                         <h1 className="nome-carrinho">Carrinho: </h1>
@@ -107,18 +123,18 @@ export default function Carrinho(){
                                 {isChange === false 
                                 ?
                                 <div className="usu-info">
-                                    <div className="text-carrinho">Endereço: { cliente.ds_endereco} </div>
-                                    <div className="text-carrinho">Numero da Residência: { cliente.nr_endereco } </div>
-                                    <div className="text-carrinho">Telefone: { cliente.nr_telefone } </div>
+                                    <div className="text-carrinho">Endereço: { endereco} </div>
+                                    <div className="text-carrinho">Numero da Residência: { numero } </div>
+                                    <div className="text-carrinho">Telefone: { telefone } </div>
                                     <button className="button-padrao" onClick={alterar}>Alterar Informaçoes </button>    
                                 </div>
                                 :
                                 <div className="usu-info">
-                                <div className="text-carrinho">Endereço:<input /></div>
-                                <div className="text-carrinho">Numero da Residência:<input /></div>
-                                <div className="text-carrinho">Telefone:<input /></div>
+                                <div className="text-carrinho">Endereço:<input  value={endereco} onChange={e => setEndereco(e.target.value) } /></div>
+                                <div className="text-carrinho">Numero da Residência:<input value={numero} onChange={e => setNumero(e.target.value) }/></div>
+                                <div className="text-carrinho">Telefone:<input value={telefone} onChange={e => setTelefone(e.target.value) }/></div>
                                 <button className="button-padrao" onClick={confirmar}>Alterar Informaçoes </button> 
-                            </div>  
+                            </div>
                                 }
                                 
                                 <div className="payment">
